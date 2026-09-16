@@ -1,0 +1,865 @@
+<!doctype html>
+<html lang="ko">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Dumpy 프로젝트 소개 발표자료 — 우리가락마구니사냥꾼, 20분 발표"
+        />
+        <title>3-1. 우리가락마구니사냥꾼. 발표자료</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <div class="deck-viewport">
+            <main class="deck-stage" id="deckStage">
+                <!-- === SLIDE 01: 00 / COVER | 발표 약 20초 === -->
+                <section
+                    class="slide dark cover active visible"
+                    aria-label="1. Dumpy 프로젝트 소개"
+                >
+                    <div class="cover-final">
+                        <div class="cover-brand">
+                            <img src="./public/dumpy-wordmark.png" alt="Dumpy" width="560" height="161" />
+                        </div>
+                        <p class="cover-desc">
+                            생각을 던지면 <span class="marker-highlight">AI가 정리</span>하는
+                            <br />
+                            <span class="marker-highlight">ADHD</span> 데일리 플래너
+                        </p>
+                    </div>
+
+                    <div class="cover-phones" aria-label="Dumpy 텍스트 입력 화면과 음성 입력 화면">
+                        <figure class="phone-mockup phone-mockup-voice">
+                            <img
+                                src="./public/presentation-screen-text.png"
+                                alt="Dumpy에서 생각을 텍스트로 입력하는 화면"
+                                width="920"
+                                height="2048"
+                            />
+                        </figure>
+                        <figure class="phone-mockup phone-mockup-text">
+                            <img
+                                src="./public/presentation-screen-voice.png"
+                                alt="Dumpy에서 생각을 음성으로 입력하는 화면"
+                                width="920"
+                                height="2048"
+                            />
+                        </figure>
+                    </div>
+
+                    <p class="cover-team">
+                        우리가락마구니사냥꾼
+                        <span>김서영 · 박도현 · 조현석</span>
+                    </p>
+
+                    <div class="footer">
+                        <span>01 / 20</span>
+                    </div>
+                </section>
+
+                <!-- === SLIDE 02: 01 / DEMO | 발표 약 90초 === -->
+                <section class="slide video-slide" aria-label="2. Dumpy가 바꾸는 기록의 순간">
+                    <div class="topline">
+                        <span class="wordmark">Dumpy</span>
+                    </div>
+                    <h2 data-edit="video-v2">
+                        <span class="video-title-highlight">Dumpy</span>가 바꾸는
+                        <br />
+                        기록의 순간
+                    </h2>
+                    <div class="slide-body">
+                        <div class="video-slot" aria-label="Dumpy 서비스 소개 영상">
+                            <video
+                                autoplay
+                                controls
+                                muted
+                                playsinline
+                                preload="metadata"
+                                aria-label="Dumpy 서비스 소개 영상 재생"
+                                src="./public/dumpy-ad-v1.mp4"
+                            >
+                                이 브라우저는 영상 재생을 지원하지 않습니다.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <span>우리가락마구니사냥꾼 / Dumpy</span>
+                        <span>02 / 20</span>
+                    </div>
+                </section>
+
+                <!-- === SLIDE 03: STORY === -->
+                <section class="slide narrative " aria-label="ADHD는 단순히 집중력의 문제가 아닙니다">
+                    <div class="topline">
+                        <span class="wordmark">Dumpy</span>
+                    </div>
+                    <h2>ADHD는 단순히 집중력의 문제가 아닙니다</h2>
+                    <div class="narrative-body">
+                        <div class="clinical-cards">
+                            <article>
+                                <h3>주의 지속·전환</h3>
+                                <p>집중이 쉽게<br />다른 곳으로 이동</p>
+                                <strong>97<span>%</span></strong>
+                            </article>
+                            <article>
+                                <h3>과업 지속·완결</h3>
+                                <p>시작한 일을 끝까지<br />이어가기 어려움</p>
+                                <strong>91<span>%</span></strong>
+                            </article>
+                            <article>
+                                <h3>조직화·계획</h3>
+                                <p>우선순위와 순서를<br />정하기 어려움</p>
+                                <strong>88<span>%</span></strong>
+                            </article>
+                            <article>
+                                <h3>망각·의도 회수</h3>
+                                <p>필요한 순간 할 일을<br />다시 떠올리기 어려움</p>
+                                <strong>80<span>%</span></strong>
+                            </article>
+                        </div>
+                        <p class="narrative-note">성인 ADHD 환자 2,257명의 DIVA-5 임상 데이터 기반 · 각 항목은 중복될 수 있음</p>
+                    </div>
+                    <div class="footer">
+                        <span>우리가락마구니사냥꾼 / Dumpy</span>
+                        <span>03 / 20</span>
+                    </div>
+                </section>
+
+                <!-- === SLIDE 04: THOUGHT OVERLOAD === -->
+                <section class="slide thought-overload" aria-label="4. 머릿속을 가득 채운 생각">
+                    <p class="thought-stream">
+                        <span class="thought-line">
+                            일단 오늘 멘토님께 보낼 피피티가 있는데 이거 그냥 보내면 안되고
+                        </span>
+                        <span class="thought-line">
+                            7페이지 캡쳐가 옛날거라 그거 먼저 최신본으로 바꾼 다음에 PDF로 변환해서
+                        </span>
+                        <span class="thought-line">
+                            보내야해...근데 메일 말고 카톡으로! 오늘 18시 전까지야. 그리고 세탁기
+                        </span>
+                        <span class="thought-line">
+                            돌려놨었지. 40분 뒤에 끝나니까 널어야하고, 내일 오전 10시에 팀 회의가
+                        </span>
+                        <span class="thought-line">
+                            있는데 치과가 11시 반이라 원래 괜찮을 줄 알았는데 이동 시간 생각하면 안될
+                        </span>
+                        <span class="thought-line">
+                            거 같기도 하고 다음주 화요일 2시 이후로 바꿀 수 있는지 오늘 5시 전엔
+                        </span>
+                        <span class="thought-line">
+                            전화해봐야할거같고....아 그리고 영수증 보내는거 계속 까먹고 있다!
+                        </span>
+                        <span class="thought-line">
+                            그거 오늘 보내고 내일 까지 편의점에 택배 반품도 갖다놔야하고 나갈때 쓰레기도 같이 버리고.....
+                        </span>
+                    </p>
+                </section>
+
+                <!-- === SLIDE 05: STORY === -->
+                <section class="slide narrative " aria-label="알고 있어도, 필요한 순간에 실행으로 이어지지 않을 수 있습니다">
+                    <div class="topline">
+                        <span class="wordmark">Dumpy</span>
+                    </div>
+                    <h2>알고 있어도, 필요한 순간에<br />실행으로 이어지지 않을 수 있습니다</h2>
+                    <div class="narrative-body">
+                        <div class="research-pair">
+                            <article>
+                                <p class="metric-label">주의가 과제에서 벗어났다고 보고</p>
+                                <div class="research-numbers">
+                                    <strong>69<span>%</span></strong>
+                                    <div>비ADHD 대조군 <b>13%</b><br />약 5.3배</div>
+                                </div>
+                            </article>
+                            <article>
+                                <p class="metric-label">실제 생활에서 세운 계획 수행</p>
+                                <strong>4.9<span> / 10</span></strong>
+                                <div class="plan-dots" aria-label="10개 중 평균 4.9개 수행">
+                                    <i></i><i></i><i></i><i></i><i class="partial"></i>
+                                    <i class="empty"></i><i class="empty"></i><i class="empty"></i><i class="empty"></i><i class="empty"></i>
+                                </div>
+                                <p class="narrative-note">평균 5.1개를 놓침 · 별도 기억 전략이 없는 조건</p>
+                            </article>
+                        </div>
+                        <p class="story-conclusion">떠오른 생각을 유지하고, 필요한 순간 다시 꺼내<br />실행하는 과정에서도 어려움이 나타납니다.</p>
+                    </div>
+                    <div class="footer">
+                        <span>우리가락마구니사냥꾼 / Dumpy</span>
+                        <span>05 / 20</span>
+                    </div>
+                </section>
+
+                <!-- === SLIDE 06: STORY === -->
+                <section class="slide narrative " aria-label="실제 ADHD 사용자의 일상에서는 이렇게 나타났습니다">
+                    <div class="topline">
+                        <span class="wordmark">Dumpy</span>
+                    </div>
+                    <h2>실제 ADHD 사용자의 일상에서는<br />이렇게 나타났습니다</h2>
+                    <div class="narrative-body">
+                        <p class="interview-subtitle">약물 치료 중인 성인 ADHD 사용자 <b>15명 심층 인터뷰</b></p>
+                        <div class="pain-cards">
+                            <article>
+                                <span class="pain-index">01</span>
+                                <div><h3>놓칩니다</h3><p>구독 해지·과제·시험·약속을 잊어<br />실제 손실이 발생합니다.</p></div>
+                            </article>
+                            <article>
+                                <span class="pain-index">02</span>
+                                <div><h3>불안합니다</h3><p>잊을까 봐 반복 확인하거나<br />현재 작업을 중단하고 처리합니다.</p></div>
+                            </article>
+                            <article>
+                                <span class="pain-index">03</span>
+                                <div><h3>흩어집니다</h3><p>가장 가까운 곳에 급하게 적다 보니<br />기록이 여러 곳에 분산됩니다.</p></div>
+                            </article>
+                            <article>
+                                <span class="pain-index">04</span>
+                                <div><h3>과하게 잡습니다</h3><p>소요 시간을 낙관적으로 예상해<br />마감 직전에 급하게 처리합니다.</p></div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <span>우리가락마구니사냥꾼 / Dumpy</span>
+                        <span>06 / 20</span>
+                    </div>
+                </section>
+
+                <!-- === SLIDE 07: STORY === -->
+                <section class="slide narrative " aria-label="그래서 도구를 사용해봤지만, 사용 자체가 또 하나의 부담이 됐습니다">
+                    <div class="topline">
+                        <span class="wordmark">Dumpy</span>
+                    </div>
+                    <h2>그래서 도구를 사용해봤지만,<br />사용 자체가 또 하나의 부담이 됐습니다</h2>
+                    <div class="narrative-body">
+                        <div class="abandon-metric"><strong><span>약 </span>90<span>%</span></strong><p>조사 참여자 중 현재 사용하지 않음</p></div>
+                        <div class="quote-pair">
+                            <blockquote>“앱에 들어가는 것 자체를 잊어요.”</blockquote>
+                            <blockquote>“기록하는 과정이 번거로워요.”</blockquote>
+                        </div>
+                        <p class="tools-explanation">Google Calendar, Todoist 등 외부 기억 도구를 사용해봤지만<br />기록과 재확인의 부담이 지속 사용을 방해했습니다.</p>
+                    </div>
+                    <div class="footer">
+                        <span>우리가락마구니사냥꾼 / Dumpy</span>
+                        <span>07 / 20</span>
+                    </div>
+                </section>
+
+                <!-- === SLIDE 08: STORY === -->
+                <section class="slide narrative " aria-label="기존 플래너는 사용자가 어려워하는 일을 다시 사용자에게 요구합니다">
+                    <div class="topline">
+                        <span class="wordmark">Dumpy</span>
+                    </div>
+                    <h2>기존 플래너는 사용자가 어려워하는 일을<br />다시 사용자에게 요구합니다</h2>
+                    <div class="narrative-body">
+                        <div class="paradox-grid">
+                            <div>
+                                <h3>플래너에 등록하려면</h3>
+                                <ol class="planner-steps">
+                                    <li>앱 열기</li><li>해야 할 일 떠올리기</li>
+                                    <li>제목 정리</li><li>할 일 나누기</li>
+                                    <li>날짜·시간 지정</li><li>우선순위 결정</li>
+                                    <li>소요시간 판단</li><li>나중에 다시 확인</li>
+                                </ol>
+                            </div>
+                            <div class="collision" aria-label="충돌">×</div>
+                            <div>
+                                <h3>사용자가 겪는 어려움</h3>
+                                <ul class="difficulty-list">
+                                    <li>주의 전환</li><li>망각</li><li>조직화 어려움</li>
+                                    <li>시간 예측 어려움</li><li>재확인 누락</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="story-conclusion">사용자가 어려움을 겪는 바로 그 과정을,<br />기존 서비스는 입력 단계에서 요구합니다.</p>
+                    </div>
+                    <div class="footer">
+                        <span>우리가락마구니사냥꾼 / Dumpy</span>
+                        <span>08 / 20</span>
+                    </div>
+                </section>
+
+                <!-- === SLIDE 09: STORY === -->
+                <section class="slide narrative principle-slide" aria-label="그래서 Dumpy는 반대로 설계했습니다">
+                    <div class="topline">
+                        <span class="wordmark">Dumpy</span>
+                    </div>
+                    <h2>그래서 Dumpy는 반대로 설계했습니다</h2>
+                    <div class="narrative-body">
+                        <p class="principle-before">계획을 잘 세우라고 요구하지 않습니다.</p>
+                        <p class="principle-main">생각나는 대로 Dump하세요.</p>
+                        <p class="principle-after">정리하고, 계획하고, 다시 알려주는 것은 Dumpy가 합니다.</p>
+                    </div>
+                    <div class="footer">
+                        <span>우리가락마구니사냥꾼 / Dumpy</span>
+                        <span>09 / 20</span>
+                    </div>
+                </section>
+
+                <!-- === SLIDE 10: STORY === -->
+                <section class="slide narrative " aria-label="Dumpy는 기록부터 실행까지의 마찰을 줄입니다">
+                    <div class="topline">
+                        <span class="wordmark">Dumpy</span>
+                    </div>
+                    <h2>Dumpy는 기록부터 실행까지의<br />마찰을 줄입니다</h2>
+                    <div class="narrative-body">
+                        <p class="journey-origin">떠오른 생각</p>
+                        <div class="journey-cards">
+                            <article><span>01 / DUMP</span><h3>빠르게 Dump</h3><p>텍스트·음성으로<br />두서없이 기록</p></article>
+                            <article><span>02 / STRUCTURE</span><h3>AI 구조화</h3><p>할 일·일정·중요도<br />예상 시간 정리</p></article>
+                            <article><span>03 / PLAN</span><h3>하루 계획</h3><p>현재 일정과 남은 작업을<br />바탕으로 계획 추천</p></article>
+                            <article><span>04 / RECALL</span><h3>필요한 순간 재확인</h3><p>미완료 작업과<br />마감 다시 노출</p></article>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <span>우리가락마구니사냥꾼 / Dumpy</span>
+                        <span>10 / 20</span>
+                    </div>
+                </section>
+
+                <!-- === SLIDE 11: 05 / FEATURES | 발표 약 80초 === -->
+                <section class="slide" aria-label="11. 세 가지 생각을, 한 번에 던집니다.">
+                    <div class="topline">
+                        <span class="wordmark">Dumpy</span>
+                    </div>
+                    <h2 data-edit="title-5">
+                        세 가지 생각을,
+                        <br />
+                        한 번에 던집니다.
+                    </h2>
+                    <div class="slide-body">
+                        <div class="demo-grid">
+                            <div class="dump-box">
+                                <div class="mini-brand">
+                                    Dumpy
+                                    <span>사용 흐름 예시</span>
+                                </div>
+                                <p data-edit="body-12">
+                                    내일 오후 3시 팀 회의,
+                                    <br />
+                                    금요일까지 발표 초안 보내고
+                                    <br />
+                                    구독 해지도 해야 해.
+                                </p>
+                                <div class="dump-bottom">
+                                    <span>순서도, 형식도 자유롭게</span>
+                                    <b>정리하기 ↗</b>
+                                </div>
+                            </div>
+                            <div class="task-results">
+                                <article>
+                                    <span class="task-type">일정</span>
+                                    <div>
+                                        <h3 data-edit="body-13">팀 회의</h3>
+                                        <p data-edit="body-14">내일 · 오후 3시</p>
+                                    </div>
+                                    <span class="check">✓</span>
+                                </article>
+                                <article>
+                                    <span class="task-type">할 일</span>
+                                    <div>
+                                        <h3 data-edit="body-15">발표 초안 보내기</h3>
+                                        <p data-edit="body-16">금요일까지</p>
+                                    </div>
+                                    <span class="check">✓</span>
+                                </article>
+                                <article>
+                                    <span class="task-type">할 일</span>
+                                    <div>
+                                        <h3 data-edit="body-17">구독 해지</h3>
+                                        <p class="pending" data-edit="body-18">날짜 미지정 · 필요하면 확인</p>
+                                    </div>
+                                    <span class="check">✓</span>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <span>우리가락마구니사냥꾼 / Dumpy</span>
+                        <span>11 / 20</span>
+                    </div>
+                </section>
+
+                <!-- === SLIDE 12: 05 / FEATURES | 발표 약 50초 === -->
+                <section class="slide " aria-label="12. AI는 제안하고, 사용자가 확정합니다.">
+                    <div class="topline">
+                        <span class="wordmark">Dumpy</span>
+                    </div>
+                    <h2 data-edit="title-6">
+                        AI는 제안하고,
+                        <br />
+                        사용자가 확정합니다.
+                    </h2>
+                    <div class="slide-body">
+                        <div class="review-strip">
+                            <div>
+                                <span>원문</span>
+                                <strong>내가 남긴 맥락</strong>
+                                <p data-edit="body-20">생각을 다시 확인할 수 있게</p>
+                            </div>
+                            <b>+</b>
+                            <div>
+                                <span>AI 정리 결과</span>
+                                <strong>확인 가능한 제안</strong>
+                                <p data-edit="body-21">할 일 · 날짜 · 중요도 · 예상 시간</p>
+                            </div>
+                            <b>→</b>
+                            <div class="accent-panel">
+                                <span>사용자</span>
+                                <strong>확인 · 수정 · 저장</strong>
+                                <p data-edit="body-22">결정권은 사용자에게</p>
+                            </div>
+                        </div>
+                        <div class="principle-row">
+                            <strong>원문을 보존합니다.</strong>
+                            <strong>추정은 구분합니다.</strong>
+                            <strong>언제든 수정합니다.</strong>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <span>우리가락마구니사냥꾼 / Dumpy</span>
+                        <span>12 / 20</span>
+                    </div>
+                </section>
+
+                <!-- === SLIDE 13: 05 / FEATURES | 발표 약 40초 === -->
+                <section class="slide" aria-label="13. 저장한 다음에도, 필요한 순간 다시 만납니다.">
+                    <div class="topline">
+                        <span class="wordmark">Dumpy</span>
+                    </div>
+                    <h2 data-edit="title-9">
+                        저장한 다음에도,
+                        <br />
+                        필요한 순간 다시 만납니다.
+                    </h2>
+                    <div class="slide-body">
+                        <div class="return-path">
+                            <div>
+                                <span class="path-dot"></span>
+                                <small>기록</small>
+                                <h3 data-edit="body-29">생각을 맡깁니다.</h3>
+                            </div>
+                            <div>
+                                <span class="path-dot"></span>
+                                <small>재확인</small>
+                                <h3 data-edit="body-30">마감과 남은 일을 봅니다.</h3>
+                            </div>
+                            <div>
+                                <span class="path-dot"></span>
+                                <small>다시 시작</small>
+                                <h3 data-edit="body-31">이어서 하거나 재배치합니다.</h3>
+                            </div>
+                        </div>
+                        <div class="return-banner">
+                            중단과 미완료를 실패로 말하지 않습니다.
+                            <br />
+                            <b>언제든 이어서 시작할 수 있게 합니다.</b>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <span>우리가락마구니사냥꾼 / Dumpy</span>
+                        <span>13 / 20</span>
+                    </div>
+                </section>
+
+                <!-- === SLIDE 14: 06 / ARCHITECTURE | 발표 약 100초 === -->
+                <section
+                    class="slide"
+                    aria-label="14. 입력·저장·AI 처리를 나누고, 품질을 추적할 수 있게 설계합니다."
+                >
+                    <div class="topline">
+                        <span class="wordmark">Dumpy</span>
+                    </div>
+                    <h2 data-edit="title-11">
+                        입력·저장·AI 처리를 나누고,
+                        <br />
+                        품질을 추적할 수 있게 설계합니다.
+                    </h2>
+                    <div class="slide-body">
+                        <div class="architecture">
+                            <div class="arch-client">
+                                <span>APP</span>
+                                <h3 data-edit="body-33">React · TypeScript</h3>
+                                <p data-edit="body-34">Capacitor 모바일 패키징</p>
+                                <small>텍스트 · 음성 입력 / 결과 확인</small>
+                            </div>
+                            <b class="arch-arrow">→</b>
+                            <div class="arch-server">
+                                <span>APPLICATION</span>
+                                <h3 data-edit="body-35">Spring Boot</h3>
+                                <p data-edit="body-36">인증 · 원문 · 할 일 관리</p>
+                                <small>AI 요청 / 음성 → 텍스트 연계</small>
+                            </div>
+                            <b class="arch-arrow">↔</b>
+                            <div class="arch-ai">
+                                <span>AI WORKFLOW</span>
+                                <h3 data-edit="body-37">FastAPI · LangGraph</h3>
+                                <p data-edit="body-38">작업 분리 · 정보 구조화</p>
+                                <small>LLM 호출 / 처리 과정 추적</small>
+                            </div>
+                        </div>
+                        <div class="architecture-bottom">
+                            <div>
+                                <b>PostgreSQL</b>
+                                <span>사용자 · 원문 · 할 일 · 일정</span>
+                            </div>
+                            <div>
+                                <b>관측</b>
+                                <span>
+                                    Langfuse: AI 품질 / PostHog: 사용자 행동
+                                    <br />
+                                    CloudWatch · Prometheus · Grafana: 운영 상태
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <span>우리가락마구니사냥꾼 / Dumpy</span>
+                        <span>14 / 20</span>
+                    </div>
+                </section>
+
+                <!-- === SLIDE 15: 07 / DEVELOPMENT STATUS | 발표 약 80초 === -->
+                <section
+                    class="slide "
+                    aria-label="15. 핵심 입력 화면과 개발 기반을 갖추고 베타 검증을 준비합니다."
+                >
+                    <div class="topline">
+                        <span class="wordmark">Dumpy</span>
+                    </div>
+                    <h2 data-edit="development-title-v2">
+                        핵심 입력 화면과 개발 기반을 갖추고,
+                        <br />
+                        베타 검증을 준비합니다.
+                    </h2>
+                    <div class="slide-body">
+                        <div class="stage-columns">
+                            <div>
+                                <span class="eyebrow">쌓아온 기반</span>
+                                <h3 data-edit="body-52">
+                                    사용자 문제를 좁히고,
+                                    <br />
+                                    개발·검증 기반을 구성
+                                </h3>
+                                <ul>
+                                    <li>문제 검증: 성인 ADHD 사용자 15명 심층 인터뷰</li>
+                                    <li>화면 구현: 텍스트·음성 입력 UI</li>
+                                    <li>개발 기반: 시스템 구조 설계 · 프론트 QA</li>
+                                </ul>
+                            </div>
+                            <div class="stage-next">
+                                <span class="eyebrow">다음에 증명할 것</span>
+                                <h3 data-edit="body-53">
+                                    쉽게 남기고,
+                                    <br />
+                                    실제로 다시 사용하는가
+                                </h3>
+                                <ul>
+                                    <li>기록 완료와 중간 이탈</li>
+                                    <li>AI 결과의 수정 부담</li>
+                                    <li>추천 수락 · 재확인 · 반복 사용</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <span>우리가락마구니사냥꾼 / Dumpy</span>
+                        <span>15 / 20</span>
+                    </div>
+                </section>
+
+                <!-- === SLIDE 16: 08 / NEXT DEVELOPMENT | 발표 약 65초 === -->
+                <section
+                    class="slide "
+                    aria-label="16. 할 일을 늘리는 대신, 오늘 가능한 계획을 제안합니다."
+                >
+                    <div class="topline">
+                        <span class="wordmark">Dumpy</span>
+                    </div>
+                    <h2 data-edit="title-8">
+                        할 일을 늘리는 대신,
+                        <br />
+                        오늘 가능한 계획을 제안합니다.
+                    </h2>
+                    <div class="slide-body">
+                        <div class="plan-layout">
+                            <div class="plan-inputs">
+                                <span class="status-tag">하루 계획 추천 · 고도화 계획</span>
+                                <h3 data-edit="body-27">
+                                    남은 할 일
+                                    <br />
+                                    + 기존 일정
+                                    <br />
+                                    + 선택·수정 이력
+                                </h3>
+                                <p data-edit="body-28">마감 · 중요도 · 예상 소요시간을 함께 고려</p>
+                                <div class="outline-note">
+                                    넘치는 작업은
+                                    <br />
+                                    <b>다른 시간으로 재배치 제안</b>
+                                </div>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-label">
+                                    오늘의 계획
+                                    <span>사용 흐름 예시</span>
+                                </div>
+                                <div class="time-row">
+                                    <span>13:00</span>
+                                    <div class="suggested">
+                                        발표 초안 작성
+                                        <small>추천 시간대</small>
+                                    </div>
+                                </div>
+                                <div class="time-row">
+                                    <span>14:00</span>
+                                    <div class="suggested short">
+                                        구독 해지
+                                        <small>추천 시간대</small>
+                                    </div>
+                                </div>
+                                <div class="time-row">
+                                    <span>15:00</span>
+                                    <div class="fixed">
+                                        팀 회의
+                                        <small>기존 일정</small>
+                                    </div>
+                                </div>
+                                <div class="timeline-foot">추천된 순서와 시간은 자유롭게 수정</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <span>우리가락마구니사냥꾼 / Dumpy</span>
+                        <span>16 / 20</span>
+                    </div>
+                </section>
+
+                <!-- === SLIDE 17: 08 / NEXT DEVELOPMENT | 발표 약 40초 === -->
+                <section class="slide" aria-label="17. 떠오른 순간과 기록 사이를 짧게 만듭니다.">
+                    <div class="topline">
+                        <span class="wordmark">Dumpy</span>
+                    </div>
+                    <h2 data-edit="title-7">
+                        떠오른 순간과 기록 사이를
+                        <br />
+                        짧게 만듭니다.
+                    </h2>
+                    <div class="slide-body">
+                        <div class="entry-layout">
+                            <div class="phone">
+                                <div class="phone-island"></div>
+                                <div class="phone-time">09:41</div>
+                                <p class="phone-date" data-edit="body-23">생각이 떠오른 바로 그 순간</p>
+                                <div class="widget">
+                                    <b>Dumpy</b>
+                                    <strong>지금 떠오른 생각은?</strong>
+                                    <div>
+                                        <span>텍스트로 남기기</span>
+                                        <span>음성으로 남기기</span>
+                                    </div>
+                                </div>
+                                <p class="phone-caption" data-edit="body-24">빠른 진입 화면 · 설계 예시</p>
+                            </div>
+                            <div class="entry-copy">
+                                <span class="status-tag">확장 계획</span>
+                                <h3 data-edit="body-25">
+                                    앱을 찾고,
+                                    <br />
+                                    입력창을 찾는 과정까지.
+                                </h3>
+                                <p data-edit="body-26">
+                                    홈 화면·잠금 화면 등 빠른 진입점을 검토합니다.
+                                    <br />
+                                    텍스트와 음성으로 상황에 맞게 기록합니다.
+                                </p>
+                                <div class="metric-line">
+                                    <small>검증할 지표</small>
+                                    <b>진입 → 기록 완료 시간</b>
+                                    <b>기록 중 이탈률</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <span>우리가락마구니사냥꾼 / Dumpy</span>
+                        <span>17 / 20</span>
+                    </div>
+                </section>
+
+                <!-- === SLIDE 18: 08 / ROADMAP | 발표 약 60초 === -->
+                <section
+                    class="slide"
+                    aria-label="18. 출시 후의 사용 데이터를, 다음 개발의 기준으로 삼습니다."
+                >
+                    <div class="topline">
+                        <span class="wordmark">Dumpy</span>
+                    </div>
+                    <h2 data-edit="title-15">
+                        출시 후의 사용 데이터를,
+                        <br />
+                        다음 개발의 기준으로 삼습니다.
+                    </h2>
+                    <div class="slide-body">
+                        <div class="roadmap">
+                            <article>
+                                <span class="month">
+                                    09
+                                    <span>2026</span>
+                                </span>
+                                <span class="status-tag">목표</span>
+                                <h3 data-edit="body-55">베타 출시</h3>
+                                <p data-edit="body-56">
+                                    Google Play · App Store
+                                    <br />
+                                    핵심 흐름의 사용성 확인
+                                </p>
+                            </article>
+                            <article class="roadmap-focus">
+                                <span class="month">10—11</span>
+                                <span class="status-tag">계획</span>
+                                <h3 data-edit="body-57">피드백으로 고도화</h3>
+                                <p data-edit="body-58">
+                                    추천 · 기록 · 재확인 행동 분석
+                                    <br />
+                                    가설 검증과 UX 개선
+                                </p>
+                            </article>
+                            <article>
+                                <span class="month">12</span>
+                                <span class="status-tag">목표</span>
+                                <h3 data-edit="body-59">정식 출시 추진</h3>
+                                <p data-edit="body-60">
+                                    개선 결과 반영
+                                    <br />
+                                    지속 가능한 운영 방안 구체화
+                                </p>
+                            </article>
+                        </div>
+                        <div class="takeaway">
+                            일정은 목표입니다.
+                            <b>출시 판단은 사용성과 품질 검증을 함께 봅니다.</b>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <span>우리가락마구니사냥꾼 / Dumpy</span>
+                        <span>18 / 20</span>
+                    </div>
+                </section>
+
+                <!-- === SLIDE 19: 09 / MARKETING | 발표 약 105초 === -->
+                <section
+                    class="slide "
+                    aria-label="19. 문제를 함께 확인한 사람들부터, 첫 사용을 시작합니다."
+                >
+                    <div class="topline">
+                        <span class="wordmark">Dumpy</span>
+                    </div>
+                    <h2 data-edit="title-16">
+                        문제를 함께 확인한 사람들부터,
+                        <br />
+                        첫 사용을 시작합니다.
+                    </h2>
+                    <div class="slide-body">
+                        <div class="gtm">
+                            <div>
+                                <b>1</b>
+                                <h3 data-edit="body-61">초기 접점</h3>
+                                <p data-edit="body-62">
+                                    설문·인터뷰 참여자
+                                    <br />
+                                    관련 커뮤니티
+                                </p>
+                            </div>
+                            <span>→</span>
+                            <div>
+                                <b>2</b>
+                                <h3 data-edit="body-63">가치 경험</h3>
+                                <p data-edit="body-64">
+                                    첫 기록 완료
+                                    <br />
+                                    정리 결과 확인과 저장
+                                </p>
+                            </div>
+                            <span>→</span>
+                            <div>
+                                <b>3</b>
+                                <h3 data-edit="body-65">반복 사용 검증</h3>
+                                <p data-edit="body-66">
+                                    재확인과 재방문
+                                    <br />
+                                    콘텐츠 · ASO 유입 검토
+                                </p>
+                            </div>
+                        </div>
+                        <div class="takeaway">
+                            확보한 사용자 수보다 먼저,
+                            <b>다시 쓸 이유를 확인합니다.</b>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <span>우리가락마구니사냥꾼 / Dumpy</span>
+                        <span>19 / 20</span>
+                    </div>
+                </section>
+
+                <!-- === SLIDE 20: 10 / BUSINESS MODEL | 발표 약 100초 === -->
+                <section class="slide" aria-label="20. 반복해서 쓰는 가치에, 구독을 붙입니다.">
+                    <div class="topline">
+                        <span class="wordmark">Dumpy</span>
+                    </div>
+                    <h2 data-edit="title-17">
+                        반복해서 쓰는 가치에,
+                        <br />
+                        구독을 붙입니다.
+                    </h2>
+                    <div class="slide-body">
+                        <div class="business-layout">
+                            <div class="business-main">
+                                <span class="eyebrow">SUBSCRIPTION HYPOTHESIS</span>
+                                <h3 data-edit="body-67">
+                                    기본 사용은 가볍게.
+                                    <br />
+                                    <em>더 깊은 AI 활용은 구독으로.</em>
+                                </h3>
+                                <p data-edit="body-68">
+                                    무료 이용 범위와 AI 기능·이용량을 차등화하는 구독 모델을
+                                    검토합니다.
+                                </p>
+                                <span class="status-tag">가격 · 한도는 사용자 검증 후 결정</span>
+                            </div>
+                            <div class="business-math">
+                                <div>
+                                    <span>사용자 가치</span>
+                                    <b>반복 사용 · 유료 전환</b>
+                                </div>
+                                <div>
+                                    <span>운영 가능성</span>
+                                    <b>사용자당 AI 이용량 · 비용</b>
+                                </div>
+                                <strong>
+                                    두 조건이 만나는
+                                    <br />
+                                    상품 구성을 찾습니다.
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <span>우리가락마구니사냥꾼 / Dumpy</span>
+                        <span>20 / 20</span>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <nav class="deck-controls" aria-label="발표자료 조작">
+            <button id="prev" title="이전 장 (←)" aria-label="이전 장">←</button>
+            <span id="counter" aria-live="polite">1 / 20</span>
+            <button id="next" title="다음 장 (→)" aria-label="다음 장">→</button>
+            <button id="fullButton" title="전체화면 (F)">전체화면 F</button>
+        </nav>
+        <div class="progress-track" aria-hidden="true"><div id="progress"></div></div>
+        <div class="edit-hotzone" aria-hidden="true"></div>
+        <button class="edit-toggle" id="editToggle" title="텍스트 편집 (E)">편집 E</button>
+        <div id="toast" role="status" hidden></div>
+        <script src="./deck.js"></script>
+    </body>
+</html>
