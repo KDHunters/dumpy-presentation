@@ -849,136 +849,107 @@
                     </div>
                 </section>
 
-                <!-- AI APPENDIX: original slides 01–20 are preserved above. -->
-                <link rel="stylesheet" href="./appendix-fonts.css" />
+                <!-- AI APPENDIX -->
                 <!-- SLIDE 21: APPENDIX 01 / 04 -->
-                <section class="slide appendix-slide" aria-label="21. Appendix 표지">
-                    <div class="appendix-root">
-                        <template shadowrootmode="open">
-                            <link rel="stylesheet" href="./appendix.css" />
-<section class="slide cover active visible" data-export-name="01-appendix" aria-label="Appendix 표지"><div class="brand" data-edit>Dumpy</div><div class="cover-only"><h1 data-edit>Appendix</h1></div><footer><span data-edit>우리가락마구니사냥꾼 / Dumpy</span><span>APPENDIX &nbsp; 01 / 04</span></footer></section>
-                        </template>
-                    </div>
-                </section>
+                <section class="slide appendix-slide cover" data-export-name="01-appendix" aria-label="21. Appendix 표지"><div class="brand" data-edit>Dumpy</div><div class="cover-only"><h1 data-edit>Appendix</h1></div><footer><span data-edit>우리가락마구니사냥꾼 / Dumpy</span><span>APPENDIX &nbsp; 01 / 04</span></footer></section>
                 <!-- SLIDE 22: APPENDIX 02 / 04 -->
-                <section class="slide appendix-slide" aria-label="22. v2-fast 워크플로">
-                    <div class="appendix-root">
-                        <template shadowrootmode="open">
-                            <link rel="stylesheet" href="./appendix.css" />
-<section class="slide active visible" data-export-name="02-ai-workflow" aria-label="v2-fast 워크플로">
- <div class="brand" data-edit>Dumpy</div><p class="eyebrow" data-edit>AI 워크플로 · 실제 코드 기준</p><h2 data-edit>작업 경계를 확정한 뒤,<br>속성과 시간을 단계적으로 완성합니다.</h2>
- <div class="workflow-v2">
-  <div class="workflow-diagram">
-   <svg class="wf-lines" viewBox="0 0 1744 520" aria-hidden="true"><defs><marker id="head" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#a6b477" stroke-width="1.5"/></marker></defs><g fill="none" stroke="#a6b477" stroke-width="2.5" marker-end="url(#head)">
-    <path d="M135 250 H160 V118 H185"/><path d="M135 250 H160 V382 H185"/>
-    <path d="M385 118 H410 V250 H435"/><path d="M385 382 H410 V250 H435"/>
-    <path d="M610 250 H650"/><path d="M820 250 H860"/><path d="M1040 250 H1080"/><path d="M1285 250 H1325"/><path d="M1540 250 H1580"/>
-   </g></svg>
-   <div class="wf-node endpoint" style="left:0px;top:162px;width:135px"><div><strong data-edit>API 입력</strong><span data-edit>원문·기준시각<br>타임존</span></div></div>
-   <div class="wf-node llm branch" style="left:185px;top:30px;width:200px"><div><strong data-edit>Boundary 1</strong><span data-edit>독립 행동·근거 추출</span></div><b>LLM</b></div>
-   <div class="wf-node llm branch" style="left:185px;top:294px;width:200px"><div><strong data-edit>Boundary 2</strong><span data-edit>누락 행동 재탐색</span></div><b>LLM</b></div>
-   <div class="wf-node " style="left:435px;top:162px;width:175px"><div><strong data-edit>병합·확정</strong><span data-edit>중복 정리<br>ID·원문 근거 확정</span></div><b>CODE</b></div>
-   <div class="wf-node " style="left:650px;top:162px;width:170px"><div><strong data-edit>Coverage</strong><span data-edit>근거 연결·미해결<br>여부 검증</span></div><b>CODE</b></div>
-   <div class="wf-node llm" style="left:860px;top:162px;width:180px"><div><strong data-edit>Enrichment</strong><span data-edit>제목·중요도·상세<br>시간 힌트·예상 시간</span></div><b>LLM</b></div>
-   <div class="wf-node " style="left:1080px;top:162px;width:205px"><div><strong data-edit>Time Resolver</strong><span data-edit>날짜·시각·마감<br>반복 일정 확정</span></div><b>CODE</b></div>
-   <div class="wf-node " style="left:1325px;top:162px;width:215px"><div><strong data-edit>최종 스키마 검증</strong><span data-edit>출력 형식·근거<br>TASK 경계 일치</span></div><b>CODE</b></div>
-   <div class="wf-node endpoint" style="left:1580px;top:162px;width:160px"><div><strong data-edit>API 출력</strong><span data-edit>검증된<br>tasks 반환</span></div></div>
-  </div>
- </div><footer><span data-edit>우리가락마구니사냥꾼 / Dumpy</span><span>APPENDIX &nbsp; 02 / 04</span></footer>
-</section>
-                        </template>
-                    </div>
+                <section class="slide appendix-slide" data-export-name="02-ai-workflow" aria-label="22. v2-fast 워크플로">
+                 <div class="brand" data-edit>Dumpy</div><p class="eyebrow" data-edit>AI 워크플로 · 실제 코드 기준</p><h2 data-edit>작업 경계를 확정한 뒤,<br>속성과 시간을 단계적으로 완성합니다.</h2>
+                 <div class="workflow-v2">
+                  <div class="workflow-diagram">
+                   <svg class="wf-lines" viewBox="0 0 1744 520" aria-hidden="true"><defs><marker id="head" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#a6b477" stroke-width="1.5"/></marker></defs><g fill="none" stroke="#a6b477" stroke-width="2.5" marker-end="url(#head)">
+                    <path d="M135 250 H160 V118 H185"/><path d="M135 250 H160 V382 H185"/>
+                    <path d="M385 118 H410 V250 H435"/><path d="M385 382 H410 V250 H435"/>
+                    <path d="M610 250 H650"/><path d="M820 250 H860"/><path d="M1040 250 H1080"/><path d="M1285 250 H1325"/><path d="M1540 250 H1580"/>
+                   </g></svg>
+                   <div class="wf-node endpoint" style="left:0px;top:162px;width:135px"><div><strong data-edit>API 입력</strong><span data-edit>원문·기준시각<br>타임존</span></div></div>
+                   <div class="wf-node llm branch" style="left:185px;top:30px;width:200px"><div><strong data-edit>Boundary 1</strong><span data-edit>독립 행동·근거 추출</span></div><b>LLM</b></div>
+                   <div class="wf-node llm branch" style="left:185px;top:294px;width:200px"><div><strong data-edit>Boundary 2</strong><span data-edit>누락 행동 재탐색</span></div><b>LLM</b></div>
+                   <div class="wf-node " style="left:435px;top:162px;width:175px"><div><strong data-edit>병합·확정</strong><span data-edit>중복 정리<br>ID·원문 근거 확정</span></div><b>CODE</b></div>
+                   <div class="wf-node " style="left:650px;top:162px;width:170px"><div><strong data-edit>Coverage</strong><span data-edit>근거 연결·미해결<br>여부 검증</span></div><b>CODE</b></div>
+                   <div class="wf-node llm" style="left:860px;top:162px;width:180px"><div><strong data-edit>Enrichment</strong><span data-edit>제목·중요도·상세<br>시간 힌트·예상 시간</span></div><b>LLM</b></div>
+                   <div class="wf-node " style="left:1080px;top:162px;width:205px"><div><strong data-edit>Time Resolver</strong><span data-edit>날짜·시각·마감<br>반복 일정 확정</span></div><b>CODE</b></div>
+                   <div class="wf-node " style="left:1325px;top:162px;width:215px"><div><strong data-edit>최종 스키마 검증</strong><span data-edit>출력 형식·근거<br>TASK 경계 일치</span></div><b>CODE</b></div>
+                   <div class="wf-node endpoint" style="left:1580px;top:162px;width:160px"><div><strong data-edit>API 출력</strong><span data-edit>검증된<br>tasks 반환</span></div></div>
+                  </div>
+                 </div><footer><span data-edit>우리가락마구니사냥꾼 / Dumpy</span><span>APPENDIX &nbsp; 02 / 04</span></footer>
                 </section>
                 <!-- SLIDE 23: APPENDIX 03 / 04 -->
-                <section class="slide appendix-slide" aria-label="23. v2-fast 성능 측정 결과">
-                    <div class="appendix-root">
-                        <template shadowrootmode="open">
-                            <link rel="stylesheet" href="./appendix.css" />
-<section class="slide active visible" data-export-name="03-model-evaluation" aria-label="v2-fast 성능 측정 결과">
- <div class="brand" data-edit>Dumpy</div><p class="eyebrow" data-edit>모델 선정 및 성능 평가 · v2-fast</p><h2 data-edit>품질·처리시간·비용을<br>평가 지표로 확인합니다.</h2>
- <div class="metrics-v2">
-  <div class="run-info"><span data-edit>평가 모델 <strong>gemini-3.5-flash-lite</strong></span><span data-edit>평가셋 <strong>41건 × 5회</strong> · 규칙 기반 평가</span></div>
-  <div class="metric-highlights" role="group" aria-label="v2-fast 핵심 평가 지표">
-   <article class="metric-highlight"><h3 data-edit>테스트 케이스 통과율</h3><p class="stat-number"><strong data-edit>96.59</strong><span data-edit>%</span></p><p class="stat-detail" data-edit>198 / 205건 통과</p></article>
-   <article class="metric-highlight"><h3 data-edit>평균 지연시간</h3><p class="stat-number"><strong data-edit>3.29</strong><span data-edit>초</span></p><p class="stat-detail" data-edit>요청 1회 평균 처리시간</p></article>
-   <article class="metric-highlight"><h3 data-edit>API 요청당 평균 비용</h3><p class="stat-number"><strong data-edit>3.01</strong><span data-edit>원</span></p><p class="stat-detail" data-edit>API 요청 1회 평균 비용</p></article>
-  </div>
-  <div class="metrics-notes">
-   <p class="metric-criteria" data-edit><strong>통과 기준</strong> 각 사례의 기대 응답, TASK·시간 정보 조건과 7초 이내 처리 기준 충족</p>
-   <p class="metric-footnote" data-edit>동일 평가셋 41건을 5회 반복 실행한 총 205건의 집계 결과. 오류 반환이 정답인 사례 포함 · 프로젝트 팀 제공 수치.</p>
-  </div>
- </div><footer><span data-edit>우리가락마구니사냥꾼 / Dumpy</span><span>APPENDIX &nbsp; 03 / 04</span></footer>
-</section>
-                        </template>
-                    </div>
+                <section class="slide appendix-slide" data-export-name="03-model-evaluation" aria-label="23. v2-fast 성능 측정 결과">
+                 <div class="brand" data-edit>Dumpy</div><p class="eyebrow" data-edit>모델 선정 및 성능 평가 · v2-fast</p><h2 data-edit>품질·처리시간·비용을<br>평가 지표로 확인합니다.</h2>
+                 <div class="metrics-v2">
+                  <div class="run-info"><span data-edit>평가 모델 <strong>gemini-3.5-flash-lite</strong></span><span data-edit>평가셋 <strong>41건 × 5회</strong> · 규칙 기반 평가</span></div>
+                  <div class="metric-highlights" role="group" aria-label="v2-fast 핵심 평가 지표">
+                   <article class="metric-highlight"><h3 data-edit>테스트 케이스 통과율</h3><p class="stat-number"><strong data-edit>96.59</strong><span data-edit>%</span></p><p class="stat-detail" data-edit>198 / 205건 통과</p></article>
+                   <article class="metric-highlight"><h3 data-edit>평균 지연시간</h3><p class="stat-number"><strong data-edit>3.29</strong><span data-edit>초</span></p><p class="stat-detail" data-edit>요청 1회 평균 처리시간</p></article>
+                   <article class="metric-highlight"><h3 data-edit>API 요청당 평균 비용</h3><p class="stat-number"><strong data-edit>3.01</strong><span data-edit>원</span></p><p class="stat-detail" data-edit>API 요청 1회 평균 비용</p></article>
+                  </div>
+                  <div class="metrics-notes">
+                   <p class="metric-criteria" data-edit><strong>통과 기준</strong> 각 사례의 기대 응답, TASK·시간 정보 조건과 7초 이내 처리 기준 충족</p>
+                   <p class="metric-footnote" data-edit>동일 평가셋 41건을 5회 반복 실행한 총 205건의 집계 결과. 오류 반환이 정답인 사례 포함 · 프로젝트 팀 제공 수치.</p>
+                  </div>
+                 </div><footer><span data-edit>우리가락마구니사냥꾼 / Dumpy</span><span>APPENDIX &nbsp; 03 / 04</span></footer>
                 </section>
                 <!-- SLIDE 24: APPENDIX 04 / 04 -->
-                <section class="slide appendix-slide" aria-label="24. 추천 시스템 고도화 화면">
-                    <div class="appendix-root">
-                        <template shadowrootmode="open">
-                            <link rel="stylesheet" href="./appendix.css" />
-<section class="slide recommendation-slide active visible" data-export-name="04-recommendation" aria-label="추천 시스템 고도화 화면">
- <div class="brand" data-edit>Dumpy</div><p class="eyebrow" data-edit>추천 시스템 고도화 · 개발 계획</p><h2 data-edit>당장 할 일 하나 또는 하루 계획,<br>목적에 맞춰 바로 선택합니다.</h2>
+                <section class="slide appendix-slide recommendation-slide" data-export-name="04-recommendation" aria-label="24. 추천 시스템 고도화 화면">
+                 <div class="brand" data-edit>Dumpy</div><p class="eyebrow" data-edit>추천 시스템 고도화 · 개발 계획</p><h2 data-edit>당장 할 일 하나 또는 하루 계획,<br>목적에 맞춰 바로 선택합니다.</h2>
 
-<div class="recommend-ui" aria-label="일정 추천 개발 계획 화면 예시">
-  <div class="rui-screen-group rui-start-group">
-    <div class="rui-screen-label" data-edit>시작 화면</div>
-    <article class="rui-phone rui-start" aria-label="추천 시작 화면">
-      <div class="rui-status"><span>9:41</span><div class="rui-island"></div><svg viewBox="0 0 56 13" width="48" height="12" aria-hidden="true"><path d="M1 12V9h3v3M6 12V6h3v6M11 12V3h3v9M16 12V0h3v12" fill="currentColor"/><path d="M24 4c4-4 10-4 14 0m-11 3c2-2 6-2 8 0m-5 3h2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><rect x="42" y="2" width="11" height="9" rx="1.8" fill="none" stroke="currentColor"/><path d="M54 5v3" stroke="currentColor"/><rect x="43.5" y="3.5" width="8" height="6" rx=".5" fill="currentColor"/></svg></div><div class="rui-appbar"><strong>Dumpy</strong></div>
-      <div class="rui-main">
-        <h3 data-edit>지금 무엇을<br>도와드릴까요?</h3>
-        <p class="rui-intro" data-edit>할 일을 늘리는 대신,<br>오늘 가능한 계획을 제안해요.</p>
-        <div class="rui-mode rui-mode-one"><div class="rui-mode-icon"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.7 2 4.5 13h6.6l-.9 9 9.3-12.2h-6.7L13.7 2Z" fill="currentColor" stroke="none"/></svg></div><div><span class="rui-mode-kicker" data-edit>01</span><strong data-edit>당장 할 일 하나</strong><p data-edit>지금 시작할 작업을 골라드려요</p></div><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></div>
-        <div class="rui-mode rui-mode-two"><div class="rui-mode-icon"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="2.5"/><path d="M7 2.5v5M17 2.5v5M3.5 10h17M7.5 14h1M12 14h1M16.5 14h1M7.5 17.5h1M12 17.5h1"/></svg></div><div><span class="rui-mode-kicker" data-edit>02</span><strong data-edit>하루 일정 세우기</strong><p data-edit>남은 시간을 현실적으로 배치해요</p></div><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></div>
-      </div><nav class="rui-nav" aria-label="앱 하단 메뉴"><div><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 5-2 8v7h20v-7l-2-8H4Z"/><path d="M2 13h6l2 3h4l2-3h6"/></svg><span data-edit>덤프</span></div><div><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="2.5"/><path d="M7 2.5v5M17 2.5v5M3.5 10h17M7.5 14h1M12 14h1M16.5 14h1M7.5 17.5h1M12 17.5h1"/></svg><span data-edit>일정</span></div><div class="rui-active"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 1.5 3 7.5 7.5 3-7.5 3-3 7.5-3-7.5L1.5 12 9 9l3-7.5Z" fill="currentColor" stroke="none"/></svg><span data-edit>추천</span></div></nav><div class="rui-homebar"></div>
-    </article>
-  </div>
+                <div class="recommend-ui" aria-label="일정 추천 개발 계획 화면 예시">
+                  <div class="rui-screen-group rui-start-group">
+                    <div class="rui-screen-label" data-edit>시작 화면</div>
+                    <article class="rui-phone rui-start" aria-label="추천 시작 화면">
+                      <div class="rui-status"><span>9:41</span><div class="rui-island"></div><svg viewBox="0 0 56 13" width="48" height="12" aria-hidden="true"><path d="M1 12V9h3v3M6 12V6h3v6M11 12V3h3v9M16 12V0h3v12" fill="currentColor"/><path d="M24 4c4-4 10-4 14 0m-11 3c2-2 6-2 8 0m-5 3h2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><rect x="42" y="2" width="11" height="9" rx="1.8" fill="none" stroke="currentColor"/><path d="M54 5v3" stroke="currentColor"/><rect x="43.5" y="3.5" width="8" height="6" rx=".5" fill="currentColor"/></svg></div><div class="rui-appbar"><strong>Dumpy</strong></div>
+                      <div class="rui-main">
+                        <h3 data-edit>지금 무엇을<br>도와드릴까요?</h3>
+                        <p class="rui-intro" data-edit>할 일을 늘리는 대신,<br>오늘 가능한 계획을 제안해요.</p>
+                        <div class="rui-mode rui-mode-one"><div class="rui-mode-icon"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.7 2 4.5 13h6.6l-.9 9 9.3-12.2h-6.7L13.7 2Z" fill="currentColor" stroke="none"/></svg></div><div><span class="rui-mode-kicker" data-edit>01</span><strong data-edit>당장 할 일 하나</strong><p data-edit>지금 시작할 작업을 골라드려요</p></div><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></div>
+                        <div class="rui-mode rui-mode-two"><div class="rui-mode-icon"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="2.5"/><path d="M7 2.5v5M17 2.5v5M3.5 10h17M7.5 14h1M12 14h1M16.5 14h1M7.5 17.5h1M12 17.5h1"/></svg></div><div><span class="rui-mode-kicker" data-edit>02</span><strong data-edit>하루 일정 세우기</strong><p data-edit>남은 시간을 현실적으로 배치해요</p></div><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></div>
+                      </div><nav class="rui-nav" aria-label="앱 하단 메뉴"><div><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 5-2 8v7h20v-7l-2-8H4Z"/><path d="M2 13h6l2 3h4l2-3h6"/></svg><span data-edit>덤프</span></div><div><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="2.5"/><path d="M7 2.5v5M17 2.5v5M3.5 10h17M7.5 14h1M12 14h1M16.5 14h1M7.5 17.5h1M12 17.5h1"/></svg><span data-edit>일정</span></div><div class="rui-active"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 1.5 3 7.5 7.5 3-7.5 3-3 7.5-3-7.5L1.5 12 9 9l3-7.5Z" fill="currentColor" stroke="none"/></svg><span data-edit>추천</span></div></nav><div class="rui-homebar"></div>
+                    </article>
+                  </div>
 
-  <div class="rui-screen-group rui-task-group">
-    <div class="rui-screen-label"><span>01</span><b data-edit>당장 할 일 하나</b></div>
-    <article class="rui-phone rui-task" aria-label="당장 할 일 추천 기준 선택 화면">
-      <div class="rui-status"><span>9:41</span><div class="rui-island"></div><svg viewBox="0 0 56 13" width="48" height="12" aria-hidden="true"><path d="M1 12V9h3v3M6 12V6h3v6M11 12V3h3v9M16 12V0h3v12" fill="currentColor"/><path d="M24 4c4-4 10-4 14 0m-11 3c2-2 6-2 8 0m-5 3h2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><rect x="42" y="2" width="11" height="9" rx="1.8" fill="none" stroke="currentColor"/><path d="M54 5v3" stroke="currentColor"/><rect x="43.5" y="3.5" width="8" height="6" rx=".5" fill="currentColor"/></svg></div><div class="rui-appbar"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 4-8 8 8 8"/></svg><strong>Dumpy</strong></div>
-      <div class="rui-main">
-        <h3 data-edit>어떤 기준으로 고를까요?</h3>
-        <p class="rui-intro" data-edit>지금 상황에 맞는 기준을 선택해요.</p>
-        <div class="rui-choice"><div class="rui-choice-icon"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 6.5V12l4 2.5"/></svg></div><div class="rui-choice-copy"><span class="rui-choice-label" data-edit>빠르게 끝내기</span><strong data-edit>자료 파일명 정리</strong><span class="rui-duration"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 6.5V12l4 2.5"/></svg><span data-edit>예상 10분</span></span></div><i class="rui-radio"></i></div>
-        <div class="rui-choice rui-selected"><div class="rui-choice-icon rui-important-icon"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="13" width="4" height="8" rx="2" fill="currentColor" stroke="none"/><rect x="10" y="8" width="4" height="13" rx="2" fill="currentColor" stroke="none"/><rect x="17" y="3" width="4" height="18" rx="2" fill="currentColor" stroke="none"/></svg></div><div class="rui-choice-copy"><span class="rui-choice-label" data-edit>중요한 일 먼저</span><strong data-edit>발표 초안 보내기</strong><span class="rui-duration"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 6.5V12l4 2.5"/></svg><span data-edit>예상 15분</span></span></div><i class="rui-radio"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></i></div>
-        <div class="rui-choice"><div class="rui-choice-icon"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12M6 21h12M7 3c0 4.4 1 6 5 9-4 3-5 4.6-5 9M17 3c0 4.4-1 6-5 9 4 3 5 4.6 5 9M8 7h8M8 17h8"/></svg></div><div class="rui-choice-copy"><span class="rui-choice-label" data-edit>마감이 가까운 일</span><strong data-edit>택배 반품 신청</strong><span class="rui-deadline"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="2.5"/><path d="M7 2.5v5M17 2.5v5M3.5 10h17M7.5 14h1M12 14h1M16.5 14h1M7.5 17.5h1M12 17.5h1"/></svg><span data-edit>오늘 18:00 마감</span></span></div><i class="rui-radio"></i></div>
-      </div><nav class="rui-nav" aria-label="앱 하단 메뉴"><div><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 5-2 8v7h20v-7l-2-8H4Z"/><path d="M2 13h6l2 3h4l2-3h6"/></svg><span data-edit>덤프</span></div><div><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="2.5"/><path d="M7 2.5v5M17 2.5v5M3.5 10h17M7.5 14h1M12 14h1M16.5 14h1M7.5 17.5h1M12 17.5h1"/></svg><span data-edit>일정</span></div><div class="rui-active"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 1.5 3 7.5 7.5 3-7.5 3-3 7.5-3-7.5L1.5 12 9 9l3-7.5Z" fill="currentColor" stroke="none"/></svg><span data-edit>추천</span></div></nav><div class="rui-homebar"></div>
-    </article>
-  </div>
+                  <div class="rui-screen-group rui-task-group">
+                    <div class="rui-screen-label"><span>01</span><b data-edit>당장 할 일 하나</b></div>
+                    <article class="rui-phone rui-task" aria-label="당장 할 일 추천 기준 선택 화면">
+                      <div class="rui-status"><span>9:41</span><div class="rui-island"></div><svg viewBox="0 0 56 13" width="48" height="12" aria-hidden="true"><path d="M1 12V9h3v3M6 12V6h3v6M11 12V3h3v9M16 12V0h3v12" fill="currentColor"/><path d="M24 4c4-4 10-4 14 0m-11 3c2-2 6-2 8 0m-5 3h2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><rect x="42" y="2" width="11" height="9" rx="1.8" fill="none" stroke="currentColor"/><path d="M54 5v3" stroke="currentColor"/><rect x="43.5" y="3.5" width="8" height="6" rx=".5" fill="currentColor"/></svg></div><div class="rui-appbar"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 4-8 8 8 8"/></svg><strong>Dumpy</strong></div>
+                      <div class="rui-main">
+                        <h3 data-edit>어떤 기준으로 고를까요?</h3>
+                        <p class="rui-intro" data-edit>지금 상황에 맞는 기준을 선택해요.</p>
+                        <div class="rui-choice"><div class="rui-choice-icon"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 6.5V12l4 2.5"/></svg></div><div class="rui-choice-copy"><span class="rui-choice-label" data-edit>빠르게 끝내기</span><strong data-edit>자료 파일명 정리</strong><span class="rui-duration"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 6.5V12l4 2.5"/></svg><span data-edit>예상 10분</span></span></div><i class="rui-radio"></i></div>
+                        <div class="rui-choice rui-selected"><div class="rui-choice-icon rui-important-icon"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="13" width="4" height="8" rx="2" fill="currentColor" stroke="none"/><rect x="10" y="8" width="4" height="13" rx="2" fill="currentColor" stroke="none"/><rect x="17" y="3" width="4" height="18" rx="2" fill="currentColor" stroke="none"/></svg></div><div class="rui-choice-copy"><span class="rui-choice-label" data-edit>중요한 일 먼저</span><strong data-edit>발표 초안 보내기</strong><span class="rui-duration"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 6.5V12l4 2.5"/></svg><span data-edit>예상 15분</span></span></div><i class="rui-radio"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></i></div>
+                        <div class="rui-choice"><div class="rui-choice-icon"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12M6 21h12M7 3c0 4.4 1 6 5 9-4 3-5 4.6-5 9M17 3c0 4.4-1 6-5 9 4 3 5 4.6 5 9M8 7h8M8 17h8"/></svg></div><div class="rui-choice-copy"><span class="rui-choice-label" data-edit>마감이 가까운 일</span><strong data-edit>택배 반품 신청</strong><span class="rui-deadline"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="2.5"/><path d="M7 2.5v5M17 2.5v5M3.5 10h17M7.5 14h1M12 14h1M16.5 14h1M7.5 17.5h1M12 17.5h1"/></svg><span data-edit>오늘 18:00 마감</span></span></div><i class="rui-radio"></i></div>
+                      </div><nav class="rui-nav" aria-label="앱 하단 메뉴"><div><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 5-2 8v7h20v-7l-2-8H4Z"/><path d="M2 13h6l2 3h4l2-3h6"/></svg><span data-edit>덤프</span></div><div><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="2.5"/><path d="M7 2.5v5M17 2.5v5M3.5 10h17M7.5 14h1M12 14h1M16.5 14h1M7.5 17.5h1M12 17.5h1"/></svg><span data-edit>일정</span></div><div class="rui-active"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 1.5 3 7.5 7.5 3-7.5 3-3 7.5-3-7.5L1.5 12 9 9l3-7.5Z" fill="currentColor" stroke="none"/></svg><span data-edit>추천</span></div></nav><div class="rui-homebar"></div>
+                    </article>
+                  </div>
 
-  <div class="rui-screen-group rui-day-group">
-    <div class="rui-screen-label"><span>02</span><b data-edit>하루 일정 세우기</b></div>
-    <article class="rui-phone rui-day" aria-label="하루 일정 추천 화면">
-      <div class="rui-status"><span>9:41</span><div class="rui-island"></div><svg viewBox="0 0 56 13" width="48" height="12" aria-hidden="true"><path d="M1 12V9h3v3M6 12V6h3v6M11 12V3h3v9M16 12V0h3v12" fill="currentColor"/><path d="M24 4c4-4 10-4 14 0m-11 3c2-2 6-2 8 0m-5 3h2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><rect x="42" y="2" width="11" height="9" rx="1.8" fill="none" stroke="currentColor"/><path d="M54 5v3" stroke="currentColor"/><rect x="43.5" y="3.5" width="8" height="6" rx=".5" fill="currentColor"/></svg></div><div class="rui-appbar"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 4-8 8 8 8"/></svg><strong>Dumpy</strong></div>
-      <div class="rui-main">
-        <h3 data-edit>오늘 가능한 계획</h3>
-        <p class="rui-intro" data-edit>기존 일정과 남은 시간을 고려했어요.</p>
-        <div class="rui-plan">
-          <div class="rui-plan-row "><time>13:00</time><i class="rui-plan-dot"></i><div class="rui-plan-card"><strong data-edit>발표 초안 작성</strong><div class="rui-plan-meta"><span class="rui-duration"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 6.5V12l4 2.5"/></svg><span data-edit>15분</span></span></div></div></div>
-          <div class="rui-plan-row "><time>14:00</time><i class="rui-plan-dot"></i><div class="rui-plan-card"><strong data-edit>자료 정리</strong><div class="rui-plan-meta"><span class="rui-duration"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 6.5V12l4 2.5"/></svg><span data-edit>30분+</span></span></div></div></div>
-          <div class="rui-plan-row rui-fixed"><time>15:00</time><i class="rui-plan-dot"></i><div class="rui-plan-card"><strong data-edit>팀 회의</strong><div class="rui-plan-meta"><span class="rui-plan-tag rui-fixed" data-edit>고정</span><span class="rui-duration"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 6.5V12l4 2.5"/></svg><span data-edit>30분+</span></span></div></div></div>
-          <div class="rui-plan-row rui-due"><time>17:00</time><i class="rui-plan-dot"></i><div class="rui-plan-card"><strong data-edit>월세 납부</strong><div class="rui-plan-meta"><span class="rui-plan-tag rui-due" data-edit>18:00 마감</span><span class="rui-duration"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 6.5V12l4 2.5"/></svg><span data-edit>15분</span></span></div></div></div>
-        </div>
-        <div class="rui-apply" data-edit>이 계획 적용</div>
-      </div><nav class="rui-nav" aria-label="앱 하단 메뉴"><div><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 5-2 8v7h20v-7l-2-8H4Z"/><path d="M2 13h6l2 3h4l2-3h6"/></svg><span data-edit>덤프</span></div><div><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="2.5"/><path d="M7 2.5v5M17 2.5v5M3.5 10h17M7.5 14h1M12 14h1M16.5 14h1M7.5 17.5h1M12 17.5h1"/></svg><span data-edit>일정</span></div><div class="rui-active"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 1.5 3 7.5 7.5 3-7.5 3-3 7.5-3-7.5L1.5 12 9 9l3-7.5Z" fill="currentColor" stroke="none"/></svg><span data-edit>추천</span></div></nav><div class="rui-homebar"></div>
-    </article>
-  </div>
+                  <div class="rui-screen-group rui-day-group">
+                    <div class="rui-screen-label"><span>02</span><b data-edit>하루 일정 세우기</b></div>
+                    <article class="rui-phone rui-day" aria-label="하루 일정 추천 화면">
+                      <div class="rui-status"><span>9:41</span><div class="rui-island"></div><svg viewBox="0 0 56 13" width="48" height="12" aria-hidden="true"><path d="M1 12V9h3v3M6 12V6h3v6M11 12V3h3v9M16 12V0h3v12" fill="currentColor"/><path d="M24 4c4-4 10-4 14 0m-11 3c2-2 6-2 8 0m-5 3h2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><rect x="42" y="2" width="11" height="9" rx="1.8" fill="none" stroke="currentColor"/><path d="M54 5v3" stroke="currentColor"/><rect x="43.5" y="3.5" width="8" height="6" rx=".5" fill="currentColor"/></svg></div><div class="rui-appbar"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 4-8 8 8 8"/></svg><strong>Dumpy</strong></div>
+                      <div class="rui-main">
+                        <h3 data-edit>오늘 가능한 계획</h3>
+                        <p class="rui-intro" data-edit>기존 일정과 남은 시간을 고려했어요.</p>
+                        <div class="rui-plan">
+                          <div class="rui-plan-row "><time>13:00</time><i class="rui-plan-dot"></i><div class="rui-plan-card"><strong data-edit>발표 초안 작성</strong><div class="rui-plan-meta"><span class="rui-duration"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 6.5V12l4 2.5"/></svg><span data-edit>15분</span></span></div></div></div>
+                          <div class="rui-plan-row "><time>14:00</time><i class="rui-plan-dot"></i><div class="rui-plan-card"><strong data-edit>자료 정리</strong><div class="rui-plan-meta"><span class="rui-duration"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 6.5V12l4 2.5"/></svg><span data-edit>30분+</span></span></div></div></div>
+                          <div class="rui-plan-row rui-fixed"><time>15:00</time><i class="rui-plan-dot"></i><div class="rui-plan-card"><strong data-edit>팀 회의</strong><div class="rui-plan-meta"><span class="rui-plan-tag rui-fixed" data-edit>고정</span><span class="rui-duration"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 6.5V12l4 2.5"/></svg><span data-edit>30분+</span></span></div></div></div>
+                          <div class="rui-plan-row rui-due"><time>17:00</time><i class="rui-plan-dot"></i><div class="rui-plan-card"><strong data-edit>월세 납부</strong><div class="rui-plan-meta"><span class="rui-plan-tag rui-due" data-edit>18:00 마감</span><span class="rui-duration"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 6.5V12l4 2.5"/></svg><span data-edit>15분</span></span></div></div></div>
+                        </div>
+                        <div class="rui-apply" data-edit>이 계획 적용</div>
+                      </div><nav class="rui-nav" aria-label="앱 하단 메뉴"><div><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 5-2 8v7h20v-7l-2-8H4Z"/><path d="M2 13h6l2 3h4l2-3h6"/></svg><span data-edit>덤프</span></div><div><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="2.5"/><path d="M7 2.5v5M17 2.5v5M3.5 10h17M7.5 14h1M12 14h1M16.5 14h1M7.5 17.5h1M12 17.5h1"/></svg><span data-edit>일정</span></div><div class="rui-active"><svg class="rui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 1.5 3 7.5 7.5 3-7.5 3-3 7.5-3-7.5L1.5 12 9 9l3-7.5Z" fill="currentColor" stroke="none"/></svg><span data-edit>추천</span></div></nav><div class="rui-homebar"></div>
+                    </article>
+                  </div>
 
-  <aside class="rui-explanation">
-    <div class="rui-development" data-edit>일정 추천 · 개발 계획</div>
-    <h4 data-edit>필요한 도움을 고르면,<br>두 가지로 나뉩니다.</h4>
-    <div class="rui-branch"><div class="rui-branch-root" data-edit>시작</div><div class="rui-branch-lines" aria-hidden="true"></div><div class="rui-branch-destinations"><div><span>01</span><b data-edit>할 일 하나 추천</b></div><div><span>02</span><b data-edit>하루 계획 제안</b></div></div></div>
-    <div class="rui-principle"><span class="rui-principle-number">01</span><div><strong data-edit>지금 시작할 일 선택</strong><p data-edit>빠른 처리 · 중요도 · 마감 중<br>현재 상황에 맞게 추천</p></div></div>
-    <div class="rui-principle"><span class="rui-principle-number">02</span><div><strong data-edit>실행 가능한 하루 구성</strong><p data-edit>고정 일정과 마감을 지키며<br>가용 시간 안에 배치</p></div></div>
-    <p class="rui-disclaimer" data-edit>화면은 개발 방향을 설명하는 예시입니다.</p>
-  </aside>
-</div>
- <footer><span data-edit>우리가락마구니사냥꾼 / Dumpy</span><span>APPENDIX &nbsp; 04 / 04</span></footer>
-</section>
-                        </template>
-                    </div>
+                  <aside class="rui-explanation">
+                    <div class="rui-development" data-edit>일정 추천 · 개발 계획</div>
+                    <h4 data-edit>필요한 도움을 고르면,<br>두 가지로 나뉩니다.</h4>
+                    <div class="rui-branch"><div class="rui-branch-root" data-edit>시작</div><div class="rui-branch-lines" aria-hidden="true"></div><div class="rui-branch-destinations"><div><span>01</span><b data-edit>할 일 하나 추천</b></div><div><span>02</span><b data-edit>하루 계획 제안</b></div></div></div>
+                    <div class="rui-principle"><span class="rui-principle-number">01</span><div><strong data-edit>지금 시작할 일 선택</strong><p data-edit>빠른 처리 · 중요도 · 마감 중<br>현재 상황에 맞게 추천</p></div></div>
+                    <div class="rui-principle"><span class="rui-principle-number">02</span><div><strong data-edit>실행 가능한 하루 구성</strong><p data-edit>고정 일정과 마감을 지키며<br>가용 시간 안에 배치</p></div></div>
+                    <p class="rui-disclaimer" data-edit>화면은 개발 방향을 설명하는 예시입니다.</p>
+                  </aside>
+                </div>
+                 <footer><span data-edit>우리가락마구니사냥꾼 / Dumpy</span><span>APPENDIX &nbsp; 04 / 04</span></footer>
                 </section>
             </main>
         </div>
