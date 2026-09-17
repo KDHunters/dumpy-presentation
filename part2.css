@@ -1,0 +1,285 @@
+.slide.dp2 {
+    --dp-ink: #1d1f1a;
+    --dp-surface: #272a24;
+    --dp-paper: #fffef6;
+    --dp-muted: #b9baaf;
+    --dp-lime: #e0fd75;
+    padding: 0;
+    background: var(--dp-ink);
+    color: var(--dp-paper);
+    font-family: "Noto Sans KR", sans-serif;
+}
+.dp2 h2,
+.dp2 h3,
+.dp2 p,
+.dp2 figure,
+.dp2 blockquote {
+    margin: 0;
+}
+.dp2 .dp-title {
+    position: absolute;
+    top: 156px;
+    left: 112px;
+    font-size: 80px;
+    line-height: 1.3;
+    font-weight: 800;
+    letter-spacing: -4px;
+    max-width: 1696px;
+}
+.dp2 .dp-accent {
+    color: var(--dp-lime);
+}
+.dp2 .dp-muted {
+    color: var(--dp-muted);
+}
+.dp2 .dp-copy {
+    position: absolute;
+    font-size: 34px;
+    line-height: 1.65;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+.dp2 .dp-caption {
+    position: absolute;
+    color: var(--dp-muted);
+    font-size: 24px;
+    line-height: 1.6;
+}
+.dp-input .dp-copy-group {
+    position: absolute;
+    left: 112px;
+    top: 0;
+    width: 760px;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 60px;
+    text-align: left;
+}
+.dp-input .dp-copy-group .dp-title,
+.dp-input .dp-copy-group .dp-copy {
+    position: static;
+}
+.dp-input .dp-marker-highlight,
+.dp-calendar .dp-marker-highlight,
+.dp-source .dp-marker-highlight,
+.dp-value-message .dp-marker-highlight {
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    padding: 0 .1em;
+    color: var(--dp-ink);
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 900;
+    font-variation-settings: "wght" 900;
+    font-synthesis: none;
+}
+.dp-input .dp-marker-highlight::before,
+.dp-calendar .dp-marker-highlight::before,
+.dp-source .dp-marker-highlight::before,
+.dp-value-message .dp-marker-highlight::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: -.04em;
+    right: -.04em;
+    top: 16%;
+    bottom: 2%;
+    background: var(--dp-lime);
+    transform: none;
+}
+.dp-input .dp-phone-frame {
+    position: absolute;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+    border: 3px solid #55594e;
+    border-radius: 68px;
+    background: #090a08;
+    box-shadow: 0 42px 80px rgba(0, 0, 0, .48), 0 0 0 1px rgba(255, 255, 255, .08) inset;
+}
+.dp-input .dp-phone-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 54px;
+}
+.dp-input .dp-input-main {
+    left: 1392px;
+    top: 152px;
+    width: 375px;
+    height: 812px;
+}
+.dp-input .dp-input-voice {
+    left: 992px;
+    top: 152px;
+    width: 375px;
+    height: 812px;
+}
+.dp-calendar .dp-title,
+.dp-action .dp-title,
+.dp-source .dp-title,
+.dp-pricing .dp-title,
+.dp-cost .dp-title {
+    top: 130px;
+    left: 100px;
+    font-size: 70px;
+    font-weight: 750;
+    line-height: 1.3;
+    letter-spacing: -3px;
+    text-align: left;
+}
+.dp-calendar-copy-group {
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60pt;
+}
+.dp-calendar .dp-calendar-copy-group .dp-title,
+.dp-calendar .dp-calendar-copy-group .dp-copy {
+    position: static;
+}
+.dp-action .dp-info-grid {
+    position: absolute;
+    left: 112px;
+    top: 360px;
+    width: 1696px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 64px;
+}
+.dp-action .dp-info-column {
+    position: relative;
+    height: 535px;
+    border-top: 3px solid var(--dp-lime);
+    padding-top: 28px;
+}
+.dp-action .dp-info-column h3 {
+    font-size: 42px;
+    font-weight: 700;
+}
+.dp-action .dp-info-value {
+    position: absolute;
+    top: 118px;
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    white-space: nowrap;
+}
+.dp-action .dp-info-value small {
+    font-size: 30px;
+    letter-spacing: -1px;
+}
+.dp-action .dp-info-column p {
+    position: absolute;
+    top: 214px;
+    color: var(--dp-muted);
+    font-size: 26px;
+}
+.dp-choice-demo {
+    --selected: 0;
+    position: absolute;
+    left: 0;
+    top: 312px;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    border-radius: 999px;
+    background: var(--dp-surface);
+    isolation: isolate;
+}
+.dp-choice-demo button {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    min-width: 0;
+    height: 108px;
+    border: 0;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--dp-muted);
+    font: inherit;
+    font-size: 30px;
+    cursor: pointer;
+}
+.dp-choice-demo button[aria-pressed="true"] {
+    color: var(--dp-lime);
+}
+.dp-choice-demo button:focus-visible {
+    outline: 2px solid var(--dp-lime);
+}
+.dp-choice-indicator {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: calc(100% / 3);
+    border-radius: 999px;
+    background: rgba(224, 253, 117, .12);
+    transform: translateX(calc(var(--selected) * 100%));
+    transition: transform .22s cubic-bezier(.4, 0, .2, 1);
+}
+.dp-date-demo {
+    position: absolute;
+    left: 0;
+    top: 312px;
+    display: grid;
+    gap: 20px;
+    font-size: 32px;
+    color: var(--dp-paper);
+}
+.dp-date-demo span {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.dp-date-demo img {
+    width: 36px;
+    height: 36px;
+}
+@media (prefers-reduced-motion: reduce) {
+    .dp-choice-indicator {
+        transition: none;
+    }
+}
+.dp-source-copy-group {
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60pt;
+    width: 940px;
+}
+.dp-source .dp-source-copy-group .dp-title,
+.dp-source .dp-source-copy-group .dp-copy {
+    position: static;
+}
+.dp-source .dp-copy {
+    width: 940px;
+    font-size: 32px;
+}
+.dp-source .dp-source-label {
+    left: 1076px;
+    top: 236px;
+    color: var(--dp-lime);
+}
+.dp-pricing .dp-caption {
+    left: 112px;
+    top: 924px;
+    font-size: 22px;
+}
+.dp-cost .dp-caption {
+    left: 112px;
+    top: 900px;
+    font-size: 23px;
+}

@@ -1,0 +1,218 @@
+.dp-source-demo {
+    position: absolute;
+    left: 1076px;
+    top: 290px;
+    width: 642.6px;
+    height: 633.6px;
+    color: #fffef6;
+    font-family: "Noto Sans KR",sans-serif;
+}
+.dp-source-demo .review-source {
+    padding: 24px 30px;
+    border: 1.8px solid rgba(224,253,117,.4);
+    border-radius: 32px;
+    background: #272a24;
+}
+.dp-source-demo .source-highlight {
+    margin: 0;
+    font-size: 25.4px;
+    line-height: 40px;
+    letter-spacing: -.7px;
+    color: rgba(255,254,246,.55);
+}
+.dp-source-demo .source-mark {
+    border-radius: 7px;
+    padding: 1px 4px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+.dp-source-demo .kind-action {
+    background: rgba(224,253,117,.28);
+    font-weight: 700;
+    box-shadow: 0 1px 0 rgba(224,253,117,.4);
+}
+.dp-source-demo .review-list {
+    display: grid;
+    gap: 22px;
+}
+.dp-source-demo .review-card {
+    position: relative;
+    height: 150px;
+    padding: 22px 30px;
+    background: #272a24;
+    border-radius: 32px;
+}
+.dp-source-demo .review-card.is-highlighted {
+    height: 255px;
+    outline: 1.8px solid rgba(224,253,117,.4);
+    outline-offset: -1.8px;
+}
+.dp-source-demo .review-title {
+    margin: 0;
+    font-size: 28.6px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -.8px;
+}
+.dp-source-demo .review-card-actions {
+    position: absolute;
+    right: 31px;
+    top: 25px;
+    display: flex;
+    gap: 40px;
+    color: #b9baaf;
+}
+.dp-source-demo .review-icon {
+    flex: none;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: currentColor;
+    mask: var(--icon) center/contain no-repeat;
+}
+.dp-source-demo .review-card-actions .review-icon {
+    width: 34px;
+    height: 34px;
+}
+.dp-source-demo .review-meta {
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    gap: 29px;
+    font-size: 25.4px;
+    line-height: 34px;
+    color: #b9baaf;
+    white-space: nowrap;
+    letter-spacing: -.5px;
+}
+.dp-source-demo .review-meta > span {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+.dp-source-demo .review-meta .schedule-meta {
+    color: #e0fd75;
+}
+.dp-source-demo .impact-dot {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #ffd36a;
+    flex: none;
+}
+.dp-source-demo .impact-dot.high {
+    background: #ff8e7d;
+}
+.dp-source-demo .review-card-expanded {
+    border-top: 1.5px solid #454a3f;
+    margin-top: 5px;
+    margin-right: 30px;
+    padding-top: 22px;
+    color: #b9baaf;
+    font-size: 25.4px;
+    line-height: 36px;
+}
+.dp-source-demo .mentoring-review {
+    cursor: pointer;
+    overflow: hidden;
+    outline: 1.8px solid transparent;
+    outline-offset: -1.8px;
+    transition: height .5s cubic-bezier(.22,1,.36,1), outline-color .3s, transform .15s;
+}
+.dp-source-demo .mentoring-review.review-press {
+    transform: scale(.98);
+}
+.dp-source-demo .mentoring-review:focus-visible {
+    outline-color: #e0fd75;
+}
+.dp-source-demo .mentoring-review .review-card-expanded {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility .3s;
+}
+.dp-source-demo .mentoring-review.is-highlighted .review-card-expanded {
+    opacity: 1;
+    visibility: visible;
+}
+.dp-source-demo .review-source {
+    border-color: transparent;
+    transition: border-color .3s;
+}
+.dp-source-demo.source-highlighted .review-source {
+    border-color: rgba(224,253,117,.4);
+}
+.dp-source-demo .source-mark {
+    position: relative;
+    isolation: isolate;
+    display: inline-block;
+    background: transparent;
+    box-shadow: none;
+    color: inherit;
+}
+.dp-source-demo .review-source {
+    height: 170px;
+    position: relative;
+    isolation: isolate;
+}
+.dp-source-demo .review-list {
+    margin-top: 40px;
+}
+.dp-source-demo .source-mark-continuous {
+    display: inline;
+}
+.dp-source-demo .source-mark-continuous::before {
+    display: none;
+}
+.dp-source-demo .source-highlight {
+    position: relative;
+    z-index: 1;
+}
+.dp-source-demo .source-strokes {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+.dp-source-demo .source-stroke {
+    position: absolute;
+    border-radius: 5px;
+    background: rgba(224,253,117,.28);
+    box-shadow: 0 1px 0 rgba(224,253,117,.4);
+    clip-path: inset(0 100% 0 0);
+}
+.dp-source-demo.source-highlighted .source-stroke {
+    clip-path: inset(0 0 0 0);
+    transition: clip-path var(--stroke-duration) linear var(--stroke-delay);
+}
+.dp-source-demo .source-mark::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: 7px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .32s cubic-bezier(.16,1,.3,1);
+}
+.dp-source-demo .kind-action::before {
+    background: rgba(224,253,117,.28);
+    box-shadow: 0 1px 0 rgba(224,253,117,.4);
+}
+.dp-source-demo.source-highlighted .source-mark {
+    color: #fffef6;
+}
+.dp-source-demo.source-highlighted .source-mark::before {
+    transform: scaleX(1);
+    transition-delay: .15s;
+}
+.dp-source-demo.source-reset *,
+.dp-source-demo.source-reset *::before {
+    transition: none !important;
+}
+@media (prefers-reduced-motion:reduce) {
+    .dp-source-demo .mentoring-review,
+.dp-source-demo .source-mark::before,
+.dp-source-demo.source-highlighted .source-stroke {
+        transition: none;
+    }
+}
