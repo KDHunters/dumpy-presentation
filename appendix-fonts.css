@@ -1,0 +1,2 @@
+/* A separate family preserves all existing slide fonts. */
+@font-face{font-family:'Dumpy Appendix Noto Sans KR';font-style:normal;font-weight:100 900;font-display:block;src:url(./public/fonts/dumpy-appendix-noto-sans-kr.ttf) format('truetype')}
