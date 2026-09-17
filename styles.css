@@ -2171,8 +2171,8 @@
 
 .slide.appendix-slide .workflow-v2 {
     position: absolute;
-    left: 88px;
-    right: 88px;
+    left: 100px;
+    right: 100px;
     top: 398px;
     height: 520px;
 }
@@ -2185,7 +2185,7 @@
 .slide.appendix-slide .wf-lines {
     position: absolute;
     inset: 0px;
-    width: 1744px;
+    width: 1720px;
     height: 520px;
     overflow: visible;
 }
@@ -2199,7 +2199,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 42px 8px 16px;
+    padding: 28px 16px 12px;
     text-align: center;
 }
 
@@ -2209,29 +2209,30 @@
 
 .slide.appendix-slide .wf-node strong {
     display: block;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     white-space: nowrap;
     letter-spacing: -0.6px;
-    line-height: 1.5;
+    line-height: 1.3;
     color: rgb(224, 229, 216);
 }
 
 .slide.appendix-slide .wf-node span {
     display: block;
-    font-size: 17px;
+    font-size: 18px;
     color: rgb(180, 186, 169);
     letter-spacing: -0.4px;
-    line-height: 1.6;
-    margin-top: 9px;
+    line-height: 1.45;
+    margin-top: 8px;
+    word-break: keep-all;
 }
 
 .slide.appendix-slide .wf-node b {
     position: absolute;
-    top: 18px;
+    top: 10px;
     left: 0px;
     right: 0px;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.5;
     letter-spacing: 1.5px;
     color: rgb(168, 177, 156);
@@ -2244,7 +2245,7 @@
 }
 
 .slide.appendix-slide .wf-node.llm strong {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 750;
     color: rgb(32, 39, 23);
 }
@@ -2254,7 +2255,7 @@
 }
 
 .slide.appendix-slide .wf-node.llm b {
-    font-size: 16px;
+    font-size: 12px;
     color: rgb(51, 66, 29);
     font-weight: 750;
     letter-spacing: 2px;
@@ -2263,16 +2264,16 @@
 .slide.appendix-slide .wf-node.endpoint {
     background: none;
     border-color: rgb(81, 91, 70);
-    padding: 16px 8px;
+    padding: 14px 16px;
 }
 
 .slide.appendix-slide .wf-node.endpoint strong {
     color: rgb(224, 229, 216);
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .slide.appendix-slide .wf-node.endpoint span {
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .slide.appendix-slide .metrics-v2 {
@@ -2383,11 +2384,11 @@
 
 .slide.appendix-slide .recommend-ui {
     position: absolute;
-    left: 88px;
-    top: 376px;
-    width: 1744px;
-    height: 650px;
-    transform: scale(0.91);
+    left: 100px;
+    top: 398px;
+    width: 1720px;
+    height: 550px;
+    transform: none;
     transform-origin: top center;
     color: rgb(244, 245, 239);
     font-family: "Dumpy Appendix Noto Sans KR", sans-serif;
@@ -2395,6 +2396,10 @@
     --rui-muted: #aeb5a4;
     --rui-rule: #424936;
     --rui-lime: #e0fd75;
+    display: grid;
+    grid-template-columns: 366px 366px 382px 414px;
+    column-gap: 64px;
+    align-items: start;
 }
 
 .slide.appendix-slide .recommend-ui * {
@@ -2408,124 +2413,74 @@
     flex: 0 0 auto;
 }
 
-.slide.appendix-slide .recommend-ui .rui-screen-group {
-    position: absolute;
+.slide.appendix-slide .recommend-ui .rui-feature-group {
+    position: relative;
     top: 0px;
-    width: 338px;
-    height: 640px;
+    width: auto;
+    height: auto;
 }
 
 .slide.appendix-slide .recommend-ui .rui-start-group {
-    left: 0px;
+    left: auto;
 }
 
 .slide.appendix-slide .recommend-ui .rui-task-group {
-    left: 450px;
+    left: auto;
 }
 
 .slide.appendix-slide .recommend-ui .rui-day-group {
-    left: 900px;
+    left: auto;
 }
 
-.slide.appendix-slide .recommend-ui .rui-screen-label {
-    height: 48px;
+.slide.appendix-slide .recommend-ui .rui-feature-label {
+    height: 54px;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 12px;
-    font-size: 24px;
+    font-size: 27px;
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: -0.4px;
+    border-bottom: 1px solid var(--rui-rule);
 }
 
-.slide.appendix-slide .recommend-ui .rui-screen-label b {
+.slide.appendix-slide .recommend-ui .rui-feature-label b {
     font-weight: 700;
 }
 
-.slide.appendix-slide .recommend-ui .rui-screen-label > span {
+.slide.appendix-slide .recommend-ui .rui-feature-label > span {
     color: var(--rui-lime);
-    font-size: 19px;
-    line-height: 35px;
+    font-size: 21px;
+    line-height: 40px;
 }
 
-.slide.appendix-slide .recommend-ui .rui-phone {
-    position: absolute;
-    top: 48px;
-    left: 0px;
-    width: 338px;
-    height: 592px;
-    border: 4px solid rgb(12, 15, 10);
-    border-radius: 39px;
-    background: rgb(25, 29, 21);
-    box-shadow: rgb(92, 98, 84) 0px 0px 0px 2px;
-    overflow: hidden;
-}
-
-.slide.appendix-slide .recommend-ui .rui-status {
-    position: absolute;
-    left: 22px;
-    right: 21px;
-    top: 12px;
-    height: 23px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0px;
-}
-
-.slide.appendix-slide .recommend-ui .rui-island {
-    position: absolute;
-    left: 99px;
-    top: -1px;
-    width: 94px;
-    height: 23px;
-    border-radius: 17px;
-    background: rgb(9, 12, 7);
-}
-
-.slide.appendix-slide .recommend-ui .rui-appbar {
-    position: absolute;
-    left: 18px;
-    right: 18px;
-    top: 47px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 18px;
-    line-height: 1.6;
-    letter-spacing: -0.3px;
-}
-
-.slide.appendix-slide .recommend-ui .rui-appbar .rui-icon {
-    width: 18px;
-    height: 18px;
-}
-
-.slide.appendix-slide .recommend-ui .rui-appbar strong {
-    font-weight: 750;
-}
-
-.slide.appendix-slide .recommend-ui .rui-start .rui-appbar {
-    left: 21px;
-    font-size: 20px;
+.slide.appendix-slide .recommend-ui .rui-feature {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    overflow: visible;
+    padding-top: 24px;
 }
 
 .slide.appendix-slide .recommend-ui .rui-main {
-    position: absolute;
-    left: 18px;
-    right: 18px;
-    top: 99px;
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
 }
 
 .slide.appendix-slide .recommend-ui h3 {
     position: static;
     width: auto;
     margin: 0px;
-    font-size: 27px;
+    font-size: 32px;
     line-height: 1.42;
     letter-spacing: -1px;
     font-weight: 800;
@@ -2540,29 +2495,29 @@
 }
 
 .slide.appendix-slide .recommend-ui .rui-intro {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.75;
     letter-spacing: -0.45px;
     color: rgb(195, 200, 185);
-    margin-top: 11px;
+    margin-top: 12px;
 }
 
 .slide.appendix-slide .recommend-ui .rui-mode {
     position: relative;
-    height: 105px;
+    height: 116px;
     width: 100%;
     border: 1px solid rgb(83, 93, 62);
     border-radius: 17px;
     display: flex;
     align-items: center;
-    gap: 11px;
+    gap: 14px;
     background: rgb(37, 43, 29);
-    padding: 14px 12px;
-    margin-top: 25px;
+    padding: 16px 14px;
+    margin-top: 27px;
 }
 
 .slide.appendix-slide .recommend-ui .rui-mode-two {
-    margin-top: 15px;
+    margin-top: 18px;
 }
 
 .slide.appendix-slide .recommend-ui .rui-mode-icon {
@@ -2584,7 +2539,7 @@
 
 .slide.appendix-slide .recommend-ui .rui-mode-kicker {
     display: block;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.25;
     font-weight: 650;
     color: var(--rui-lime);
@@ -2593,7 +2548,7 @@
 }
 
 .slide.appendix-slide .recommend-ui .rui-mode strong {
-    font-size: 19px;
+    font-size: 23px;
     line-height: 1.5;
     font-weight: 750;
     letter-spacing: -0.6px;
@@ -2601,7 +2556,7 @@
 }
 
 .slide.appendix-slide .recommend-ui .rui-mode p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.7;
     margin-top: 3px;
     color: rgb(195, 200, 185);
@@ -2614,96 +2569,48 @@
     height: 16px;
     position: absolute;
     right: 10px;
-    top: 45px;
+    top: 50px;
     color: rgb(215, 221, 205);
 }
 
-.slide.appendix-slide .recommend-ui .rui-nav {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    bottom: 16px;
-    height: 60px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-top: 1px solid rgb(50, 57, 43);
-    background: rgb(25, 29, 21);
-    padding: 9px 13px 0px;
-}
-
-.slide.appendix-slide .recommend-ui .rui-nav > div {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 3px;
-    width: 72px;
-    color: rgb(220, 224, 212);
-}
-
-.slide.appendix-slide .recommend-ui .rui-nav .rui-icon {
-    width: 20px;
-    height: 20px;
-}
-
-.slide.appendix-slide .recommend-ui .rui-nav span {
-    font-size: 11px;
-    line-height: 1.45;
-    font-weight: 500;
-}
-
-.slide.appendix-slide .recommend-ui .rui-nav .rui-active {
-    color: var(--rui-lime);
-}
-
-.slide.appendix-slide .recommend-ui .rui-homebar {
-    position: absolute;
-    bottom: 7px;
-    left: 111px;
-    width: 108px;
-    height: 4px;
-    border-radius: 3px;
-    background: rgb(244, 245, 239);
-}
-
 .slide.appendix-slide .recommend-ui .rui-task .rui-main {
-    top: 106px;
+    top: auto;
 }
 
 .slide.appendix-slide .recommend-ui .rui-task h3 {
-    font-size: 23px;
+    font-size: 29px;
     line-height: 1.5;
-    white-space: nowrap;
+    white-space: normal;
     letter-spacing: -1px;
 }
 
 .slide.appendix-slide .recommend-ui .rui-task .rui-intro {
-    font-size: 14px;
-    margin-top: 5px;
+    font-size: 17px;
+    margin-top: 9px;
     margin-bottom: 0px;
     white-space: nowrap;
 }
 
 .slide.appendix-slide .recommend-ui .rui-task .rui-intro + .rui-choice {
-    margin-top: 20px;
+    margin-top: 24px;
 }
 
 .slide.appendix-slide .recommend-ui .rui-choice {
-    height: 94px;
+    height: 98px;
     display: flex;
     align-items: center;
     position: relative;
-    gap: 12px;
-    padding: 10px 11px;
+    gap: 14px;
+    padding: 9px 14px;
     border: 1px solid rgb(60, 68, 51);
     border-radius: 15px;
     background: rgb(37, 42, 32);
-    margin-top: 12px;
+    margin-top: 9px;
 }
 
 .slide.appendix-slide .recommend-ui .rui-choice-icon {
-    width: 39px;
-    height: 39px;
+    width: 44px;
+    height: 44px;
     align-self: flex-start;
     margin-top: 2px;
     display: flex;
@@ -2724,12 +2631,12 @@
 .slide.appendix-slide .recommend-ui .rui-choice-copy {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 3px;
     align-items: flex-start;
 }
 
 .slide.appendix-slide .recommend-ui .rui-choice-label {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.45;
     color: rgb(199, 205, 191);
     display: flex;
@@ -2739,7 +2646,7 @@
 }
 
 .slide.appendix-slide .recommend-ui .rui-choice-copy > strong {
-    font-size: 18px;
+    font-size: 21px;
     line-height: 1.45;
     font-weight: 750;
     letter-spacing: -0.6px;
@@ -2748,7 +2655,7 @@
 
 .slide.appendix-slide .recommend-ui .rui-duration,
 .slide.appendix-slide .recommend-ui .rui-deadline {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.5;
     color: rgb(197, 204, 188);
     display: inline-flex;
@@ -2765,7 +2672,7 @@
 
 .slide.appendix-slide .recommend-ui .rui-radio {
     position: absolute;
-    right: 11px;
+    right: 14px;
     top: 39px;
     width: 20px;
     height: 20px;
@@ -2794,72 +2701,82 @@
 }
 
 .slide.appendix-slide .recommend-ui .rui-day .rui-main {
-    top: 106px;
+    top: auto;
 }
 
 .slide.appendix-slide .recommend-ui .rui-day h3 {
-    font-size: 26px;
+    font-size: 30px;
     line-height: 1.5;
     letter-spacing: -1px;
 }
 
 .slide.appendix-slide .recommend-ui .rui-day .rui-intro {
-    font-size: 13px;
-    margin-top: 3px;
+    font-size: 17px;
+    margin-top: 9px;
     white-space: nowrap;
 }
 
 .slide.appendix-slide .recommend-ui .rui-plan {
     position: relative;
-    margin-top: 15px;
+    margin-top: 24px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
 }
 
 .slide.appendix-slide .recommend-ui .rui-plan-row {
-    height: 58px;
+    height: 70px;
     display: flex;
     align-items: flex-start;
     position: relative;
-    gap: 23px;
+    gap: 24px;
     padding-left: 0px;
 }
 
+.slide.appendix-slide .recommend-ui .rui-plan-row:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    left: 70px;
+    top: 22px;
+    width: 1px;
+    height: calc(100% + 10px);
+    background: #687554;
+}
+
 .slide.appendix-slide .recommend-ui .rui-plan-row time {
-    width: 46px;
+    width: 56px;
     flex: 0 0 auto;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 1.5;
-    padding-top: 10px;
+    padding-top: 13px;
     letter-spacing: -0.2px;
     font-weight: 500;
 }
 
 .slide.appendix-slide .recommend-ui .rui-plan-dot {
     position: absolute;
-    left: 56px;
-    top: 14px;
+    left: 66px;
+    top: 18px;
     width: 9px;
     height: 9px;
-    background: rgb(25, 29, 21);
+    background: var(--slide-bg);
     border: 1.7px solid var(--rui-lime);
     border-radius: 50%;
     z-index: 1;
 }
 
 .slide.appendix-slide .recommend-ui .rui-plan-card {
-    width: 225px;
+    width: calc(100% - 80px);
     border: 1px solid rgb(60, 68, 51);
     border-radius: 13px;
     background: rgb(37, 42, 32);
-    padding: 5px 10px;
-    height: 58px;
+    padding: 8px 12px;
+    height: 70px;
 }
 
 .slide.appendix-slide .recommend-ui .rui-plan-card > strong {
     display: block;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
     font-weight: 700;
     letter-spacing: -0.5px;
@@ -2868,13 +2785,13 @@
 .slide.appendix-slide .recommend-ui .rui-plan-meta {
     display: flex;
     align-items: center;
-    gap: 7px;
-    margin-top: 3px;
+    gap: 8px;
+    margin-top: 4px;
     height: 19px;
 }
 
 .slide.appendix-slide .recommend-ui .rui-plan-meta .rui-duration {
-    font-size: 11px;
+    font-size: 13px;
     gap: 4px;
 }
 
@@ -2887,7 +2804,7 @@
     display: inline-flex;
     align-items: center;
     border-radius: 5px;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.5;
     padding: 1px 5px;
     font-weight: 700;
@@ -2913,25 +2830,25 @@
 }
 
 .slide.appendix-slide .recommend-ui .rui-apply {
-    height: 39px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 18px;
     border-radius: 11px;
     background: var(--rui-lime);
     color: rgb(25, 29, 21);
-    font-size: 16px;
+    font-size: 19px;
     font-weight: 800;
     line-height: 1.5;
 }
 
 .slide.appendix-slide .recommend-ui .rui-explanation {
-    position: absolute;
-    left: 1300px;
-    top: 66px;
-    width: 426px;
-    height: 574px;
+    position: relative;
+    left: auto;
+    top: 0px;
+    width: auto;
+    height: 526px;
     padding-left: 31px;
     border-left: 1px solid rgb(65, 72, 56);
 }
@@ -3035,13 +2952,19 @@
     letter-spacing: -0.5px;
 }
 
-.slide.appendix-slide .recommend-ui .rui-disclaimer {
+/* === SYSTEM ARCHITECTURE: slide 25 only === */
+.slide.appendix-slide.architecture-slide .architecture-figure {
     position: absolute;
-    left: 31px;
-    bottom: 14px;
-    font-size: 15px;
-    line-height: 1.6;
-    letter-spacing: -0.4px;
-    color: rgb(162, 171, 149);
-    white-space: nowrap;
+    left: 100px;
+    right: 100px;
+    top: 302px;
+    height: 650px;
+    margin: 0;
+}
+
+.slide.appendix-slide.architecture-slide .architecture-figure img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
