@@ -1,0 +1,71 @@
+/* Shared background and footer for the main deck and both imported documents. */
+@font-face {
+    font-family: "Dumpy Deck Footer";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./public/fonts/noto-sans-kr-1.woff2") format("woff2");
+}
+
+:root {
+    --deck-background: #1d1f1a;
+    --stage-bg: var(--deck-background);
+    --slide-bg: var(--deck-background);
+}
+
+html,
+body,
+.deck-viewport,
+.deck-stage,
+:root .slide {
+    background: var(--deck-background);
+}
+
+.slide > .deck-footer {
+    position: absolute;
+    left: 100px;
+    right: 100px;
+    bottom: 49px;
+    z-index: 50;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 17px 0 0;
+    border: 0;
+    border-top: 1px solid #b9baaf40;
+    background: var(--deck-background);
+    color: #fffef6;
+    font-family: "Dumpy Deck Footer", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.3px;
+    text-align: left;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+/* Keep oversized slide artwork out of the shared footer area. */
+.deck-footer::before {
+    content: "";
+    position: absolute;
+    inset: 0 -100px -49px;
+    z-index: -1;
+    background: var(--deck-background);
+}
+
+.deck-footer > span:last-child {
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+}
+
+.slide > .deck-footer-number-only {
+    justify-content: flex-end;
+}
+
+/* Pages 3 and 4 share a slide; only the expanded chart page has a footer. */
+.slide.mw-slide:not(.expanded) > .deck-footer {
+    display: none;
+}
