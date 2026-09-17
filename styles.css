@@ -2040,9 +2040,12 @@
     word-break: normal;
 }
 
+html.appendix-deck {
+    --stage-bg: #10120e;
+}
+
 .slide.appendix-slide {
-    --stage-bg: #11130f;
-    --slide-bg: #1e2119;
+    --slide-bg: var(--bg);
     --ink: #f4f5ef;
     --muted: #a9afa0;
     --lime: #e0fd75;
