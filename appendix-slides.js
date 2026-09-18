@@ -10,7 +10,7 @@
             slide.inert = !active;
             slide.setAttribute('aria-hidden', String(!active));
         });
-        slides[index].querySelector('.deck-footer span:last-child').textContent = `${number} / ${total}`;
+        slides[index].querySelector('.deck-footer span:last-child').textContent = `APPENDIX ${String(number).padStart(2, '0')} / ${String(total).padStart(2, '0')}`;
     };
 
     function fit() {

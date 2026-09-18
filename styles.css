@@ -180,6 +180,19 @@ em {
     position: absolute;
     inset: 0;
 }
+.thank-you-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.thank-you-content h1 {
+    font-size: 110px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -3px;
+}
 .cover-brand img {
     display: block;
     object-fit: contain;

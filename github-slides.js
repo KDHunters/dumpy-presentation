@@ -30,7 +30,7 @@
         });
 
         const footer = slides[index].querySelector('.deck-footer span:last-child');
-        if (footer) footer.textContent = `${number} / ${total}`;
+        if (footer) footer.textContent = `${String(number).padStart(2, '0')} / ${String(total).padStart(2, '0')}`;
     };
 
     function fit() {

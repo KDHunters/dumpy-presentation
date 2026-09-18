@@ -2,6 +2,10 @@
 class SlidePresentation {
   constructor() {
     this.slides = [...document.querySelectorAll(".slide")];
+    this.mainSlideCount = this.slides.filter(slide =>
+      !slide.hasAttribute('data-appendix-index') && !slide.hasAttribute('data-unnumbered')
+    ).length;
+    this.appendixSlideCount = this.slides.filter(slide => slide.hasAttribute('data-appendix-index')).length;
     this.stage = document.getElementById("deckStage");
     this.currentSlide = 0;
     this.importedFrame = document.getElementById('importedFrame');
@@ -195,7 +199,7 @@ class SlidePresentation {
     document.body.classList.toggle('is-imported', Boolean(activeFrame));
     if (isAppendix) {
       this.appendixFrame.contentWindow.render?.(
-        Number(slide.dataset.appendixIndex), this.currentSlide + 1, this.slides.length
+        Number(slide.dataset.appendixIndex), Number(slide.dataset.appendixIndex) + 1, this.appendixSlideCount
       );
     } else if (activeFrame) {
       this.importedFrame.contentWindow.render?.(
@@ -203,7 +207,7 @@ class SlidePresentation {
         slide.dataset.expanded === 'true',
         slide.dataset.quote === 'true',
         this.currentSlide + 1,
-        this.slides.length,
+        this.mainSlideCount,
         slide.dataset.guidance === 'true'
       );
     }
