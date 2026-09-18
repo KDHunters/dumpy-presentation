@@ -188,6 +188,7 @@ class SlidePresentation {
     this.externalFrames.forEach(frame => {
       const active = frame === activeFrame;
       frame.classList.toggle('is-active', active);
+      if (!active) frame.contentWindow.resetSlideAnimations?.();
       frame.inert = !active;
       frame.setAttribute('aria-hidden', String(!active));
     });

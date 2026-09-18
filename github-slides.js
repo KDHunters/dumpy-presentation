@@ -4,7 +4,16 @@
     const slides = [...document.querySelectorAll('.slide')];
     let last = -1;
 
+    window.resetSlideAnimations = () => {
+        slides.forEach(slide => slide.classList.remove('active', 'visible', 'entering'));
+        last = -1;
+    };
+
     window.render = (index, expanded, quote, number, total, guidance) => {
+        if (last !== index) {
+            slides[index].classList.remove('active', 'visible');
+            void slides[index].offsetWidth;
+        }
         slides.forEach(slide => slide.classList.remove('entering'));
         if (last === 0 && index === 1) slides[index].classList.add('entering');
         last = index;
